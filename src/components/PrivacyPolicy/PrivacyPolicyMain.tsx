@@ -62,78 +62,74 @@ const PrivacyPolicyMain = () => {
                   role="tabpanel"
                 >
                   <div className="terms_conditions_content">
-                    <h3 className="warpper_title">Privacy Policy Agreement</h3>
+                    <h3 className="warpper_title">Chính sách Bảo mật Thông tin</h3>
                     <p>
-                      At <strong>Orgado</strong>, we value your privacy and are committed to
-                      protecting your personal information. This Privacy Policy
-                      outlines how we collect, use, and safeguard your data when
-                      you interact with our platform.
+                      Tại <strong>GrowSphere</strong>, chúng tôi trân trọng quyền riêng tư của bạn
+                       và cam kết bảo vệ thông tin cá nhân của người dùng. 
+                      Chính sách Bảo mật này nhằm giải thích cách chúng tôi thu thập,
+                      sử dụng và bảo vệ dữ liệu của bạn khi bạn tương tác với nền tảng của chúng tôi.
                     </p>
 
-                    <h4 className="info_title">Why We Collect Data</h4>
+                    <h4 className="info_title">Vì sao chúng tôi thu thập dữ liệu</h4>
                     <p>
-                      As a provider of the
-                      {` "<strong>Orgado</strong> -e commerce "`} you may collect and{" "}
-                      <Link className="link" href="/faq">
+                      Là đơn vị cung cấp nền tảng <strong>GrowSphere</strong>  – hệ sinh thái trồng và chăm sóc cây thông minh, chúng 
+                      {/* { "<strong>Orgado</strong> -e commerce "} you may collect and{" "} */}
+                      {/* <Link className="link" href="/faq">
                         Google require website
-                      </Link>{" "}
+                      </Link>{" "} */}
+                      <span> tôi thu thập thông tin nhằm mục đích:</span>
                     </p>
 
                     <span className="list_item_text">
-                      <strong>1. Personal Information:</strong> When you create
-                      an account or make a purchase, we may collect your name,
-                      email address, shipping address, and payment details to
-                      provide you with our services.
+                      <strong>1. Thông tin cá nhân:</strong> Khi bạn tạo tài khoản hoặc
+                      thực hiện mua hàng, chúng tôi có thể thu thập các thông tin như:
+                      họ tên, địa chỉ email, địa chỉ giao hàng và thông tin thanh toán
+                      để phục vụ việc xử lý đơn hàng và hỗ trợ khách hàng.
                     </span>
                     <br />
                     <span className="list_item_text">
-                      <strong>2. Browsing Data:</strong> We may collect
-                      information about your browsing behavior on our website to
-                      improve our product recommendations and enhance your
-                      shopping experience.
+                      <strong>2. Dữ liệu duyệt web:</strong> Chúng tôi có thể thu thập thông tin về hành
+                      vi truy cập của bạn trên trang web (như sản phẩm bạn
+                       quan tâm, trang bạn đã xem) để cải thiện chất lượng dịch
+                      vụ và gợi ý sản phẩm phù hợp hơn với bạn.
                     </span>
                     <br />
                     <span className="list_item_text">
-                      <strong>3. Cookies and Tracking:</strong> We use cookies
-                      and tracking technologies to gather data about your
-                      interactions with our website, such as pages visited and
-                      products viewed. This information helps us tailor our
-                      offerings to your preferences and interests.
+                      <strong>3. Cookies và công nghệ theo dõi:</strong> Chúng tôi sử dụng cookies và
+                      các công nghệ tương tự để lưu trữ dữ liệu về phiên làm việc, tương tác
+                      của bạn với website. Những dữ liệu này giúp chúng tôi cá nhân 
+                      hóa trải nghiệm người dùng và nâng cao hiệu suất của nền tảng.
                     </span>
                     <br />
                     <span className="list_item_text">
-                      <strong>4. Third-Party Services:</strong> Some popular
-                      third-party services may require us to post Privacy Policy
-                      agreements on our website to comply with their policies
-                      and regulations.
+                      <strong>4. Dịch vụ bên thứ ba:</strong> Một số dịch vụ bên thứ ba
+                      phổ biến (như Google) yêu cầu chúng tôi công khai chính 
+                      sách bảo mật trên website để đảm bảo tuân thủ 
+                      quy định và tiêu chuẩn của họ.
                     </span>
 
                     <h4 className="info_title">
-                      Questions, comments, or report of incidents
+                      Liên hệ và phản hồi
                     </h4>
                     <p className="mb-1">
-                      You may direct questions, comments or reports to:
+                      Nếu bạn có bất kỳ câu hỏi, góp ý hoặc muốn báo cáo sự cố liên quan đến quyền riêng tư, vui lòng liên hệ qua email:
                     </p>
                     <p>
                       <Link className="link" href="mailto:howdy@paradox.com">
-                        <strong>Orgado</strong>admin@gmail.com
+                        <strong>email nhóm mình</strong>@gmail.com
                       </Link>
                     </p>
                     <h4 className="info_title">
-                      Revisions to this privacy policy without notice
+                      Thay đổi chính sách mà không cần thông báo trước
                     </h4>
                     <p className="mb-0">
-                      This Privacy Policy is dynamic. It will continually
-                      change. You may not assume that it remains the same and
-                      you agree to check the policy each time you visit the site
-                      for changes. Unless, in the sole opinion of the website,
-                      this policy changes so drastically as to suggest a posted
-                      notification on the site or via email, you will receive no
-                      notification of changes to this Privacy Policy nor, under
-                      any circumstances, does this site promise notification.
-                      Your continued use of this site always evidences your
-                      acceptance of the terms this Privacy Policy or any
-                      modifications.
+                      Chính sách Bảo mật này có thể thay đổi bất kỳ lúc nào. 
+                      Bạn đồng ý rằng việc tiếp tục sử dụng website sau các thay 
+                      đổi đồng nghĩa với việc chấp nhận các điều khoản cập nhật. 
+                      Chúng tôi không cam kết gửi thông báo cho từng thay đổi, trừ 
+                      khi sự thay đổi đó được cho là đáng kể theo đánh giá riêng 
+                      của chúng tôi và cần được thông báo công khai trên website 
+                      hoặc qua email.
                     </p>
                   </div>
                 </div>
@@ -144,29 +140,29 @@ const PrivacyPolicyMain = () => {
                 >
                   <div className="terms_conditions_content">
                     <h3 className="warpper_title">
-                      Terms and Conditions Agreement
+                      Điều khoản và Điều kiện Sử dụng
                     </h3>
                     <p>
-                      A terms and conditions agreement outlines the website
-                      administrator`’`s rules regarding user behaviour and
-                      provides information about the actions the website
-                      administrator can and will perform. Essentially, your
-                      terms and conditions text is a{" "}
+                      Thỏa thuận Điều khoản và Điều kiện sử dụng quy định các 
+                      nguyên tắc mà người dùng cần tuân thủ khi sử dụng nền tảng 
+                      GrowSphere, đồng thời thể hiện những quyền và trách nhiệm 
+                      mà chúng tôi – đơn vị quản lý website – có thể thực hiện. 
+                      Đây được xem như một hợp đồng pháp lý{" "}
                       <Link className="link" href="/contact">
-                        contract between your website and its users
+                        giữa bạn (người dùng) và chúng tôi (GrowSphere)
                       </Link>
-                      . In the event of a legal dispute, arbitrators will look
-                      at it to determine whether each party acted within their
-                      rights.
+                      . Trong trường hợp có tranh chấp pháp lý, đây là căn cứ 
+                      để các bên có thể đối chiếu quyền lợi và nghĩa vụ.
                     </p>
                     <p>
-                      Condition is not a new concept. Humans have always desired
-                      privacy in their social as well as private lives. But the
-                      idea of privacy as a human right is a relatively modern
-                      phenomenon.
+                      Việc đặt ra điều khoản không phải là khái niệm mới 
+                      – con người luôn mong muốn có quyền riêng tư và sự bảo 
+                      vệ trong không gian sống và kỹ thuật số. Việc quy định 
+                      rõ ràng điều kiện sử dụng giúp xây dựng một môi trường 
+                      công bằng, minh bạch và an toàn cho tất cả người dùng.
                     </p>
                     <h4 className="info_title">
-                      Here are some of the main reasons:
+                      Lý do thu thập và sử dụng thông tin:
                     </h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
@@ -174,10 +170,10 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>1. Improved Shopping Experience:</strong> We
-                          use your information to enhance your shopping
-                          experience, including personalized product
-                          recommendations and seamless checkout processes.
+                          <strong>1. Nâng cao trải nghiệm người dùng:</strong> Chúng tôi 
+                          sử dụng thông tin của bạn để cá nhân hóa trải nghiệm, gợi ý sản 
+                          phẩm và dịch vụ phù hợp hơn, giúp quá trình mua hàng và chăm 
+                          cây diễn ra thuận tiện.
                         </span>
                       </li>
                       <li>
@@ -185,9 +181,9 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>2. Order Processing:</strong> We collect data
-                          to process and fulfill your orders, including shipping
-                          and delivery.
+                          <strong>2. Xử lý đơn hàng:</strong> Chúng tôi thu thập 
+                          thông tin để xử lý và hoàn tất các đơn hàng của bạn, 
+                          bao gồm giao hàng và hỗ trợ sau bán.
                         </span>
                       </li>
                       <li>
@@ -195,31 +191,25 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>3. Marketing and Communication:</strong> With
-                          your consent, we may send you promotional offers and
-                          updates via email or SMS.
+                          <strong>3. Tiếp thị và liên hệ:</strong> Với sự đồng ý của bạn, 
+                          chúng tôi có thể gửi email hoặc tin nhắn SMS về các chương trình 
+                          khuyến mãi, cập nhật sản phẩm hoặc các nội dung hữu ích liên quan 
+                          đến trồng cây và môi trường.
                         </span>
                       </li>
                     </ul>
-                    <h4 className="info_title">What We Collect</h4>
+                    <h4 className="info_title">Thông tin chúng tôi thu thập</h4>
                     <p>
-                      When you use our website, we may collect information such
-                      as your name, email address, shipping address, and payment
-                      details. This information is used solely for the purpose
-                      of providing our services to you.
-                      <Link className="link" href="/privacy-policy">
-                        what clauses to include in your terms and conditions
-                      </Link>
-                      , but this clause essentially limits what customers can
-                      hold you liable for.
+                      Khi bạn sử dụng nền tảng GrowSphere, chúng tôi có thể thu thập các 
+                      thông tin như: Họ tên, Địa chỉ email, Địa chỉ giao hàng, Thông tin 
+                      thanh toán. Những dữ liệu này chỉ được sử dụng để cung cấp và nâng 
+                      cao chất lượng dịch vụ cho bạn.
                     </p>
 
-                    <h4 className="info_title">Our Liability Limitations</h4>
+                    <h4 className="info_title">Giới hạn trách nhiệm</h4>
                     <p>
-                      At [Your E-commerce Website], we are committed to
-                      providing you with a seamless shopping experience.
-                      However, {`it's`} essential to understand our limitations
-                      and responsibilities. Please read the following carefully:
+                      Tại GrowSphere, chúng tôi luôn nỗ lực mang đến trải nghiệm 
+                      sử dụng và mua sắm mượt mà, tuy nhiên, bạn cần hiểu rõ các giới hạn sau:
                     </p>
                     <ul className="icon_list unordered_list_block">
                       <li>
@@ -227,12 +217,11 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>1. Product Information Accuracy:</strong>{" "}
-                          While we strive for accuracy, there may be occasional
-                          inaccuracies or errors in product descriptions,
-                          pricing, or availability. We reserve the right to
-                          correct such errors and may cancel orders affected by
-                          inaccuracies.
+                          <strong>1. Thông tin sản phẩm:</strong>{" "}
+                          Dù luôn cố gắng đảm bảo tính chính xác, đôi khi 
+                          vẫn có thể xảy ra sai sót trong mô tả, giá cả hoặc 
+                          tình trạng sản phẩm. Chúng tôi có quyền điều chỉnh 
+                          và/hoặc hủy các đơn hàng bị ảnh hưởng bởi sai sót đó.
                         </span>
                       </li>
                       <li>
@@ -240,11 +229,10 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>2. Customer Satisfaction:</strong> We aim to
-                          ensure your enjoyment when shopping with us. If you
-                          have any concerns or are dissatisfied with your
-                          purchase, please contact our customer support team,
-                          and we will do our best to address your issues.
+                          <strong>2. Hài lòng của khách hàng:</strong>  Nếu bạn 
+                          có bất kỳ vấn đề nào về sản phẩm hoặc trải nghiệm dịch 
+                          vụ, xin vui lòng liên hệ bộ phận hỗ trợ để được giải 
+                          quyết nhanh chóng và tận tình.
                         </span>
                       </li>
                       <li>
@@ -252,12 +240,10 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>3. Product and Website Availability:</strong>{" "}
-                          While we strive to maintain the availability of our
-                          products and website, there may be instances of
-                          temporary downtime due to maintenance or technical
-                          issues. We apologize for any inconvenience this may
-                          cause and work to resolve such issues promptly.
+                          <strong>3. Khả năng truy cập website và sản phẩm:</strong>{" "}
+                          Website hoặc sản phẩm có thể tạm thời gián đoạn vì bảo 
+                          trì hoặc sự cố kỹ thuật. Chúng tôi sẽ cố gắng khắc phục 
+                          nhanh chóng nếu điều đó xảy ra.
                         </span>
                       </li>
                       <li>
@@ -265,50 +251,45 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>4. Security and Product Integrity:</strong> We
-                          take precautions to protect our website from viruses
-                          and spyware. However, we cannot guarantee absolute
-                          security. We recommend using up-to-date antivirus
-                          software and taking precautions when downloading files
-                          or links from our platform.
+                          <strong>4. Bảo mật và an toàn:</strong> We
+                          Dù áp dụng các biện pháp bảo mật, chúng tôi 
+                          không thể đảm bảo 100% an toàn trước virus hay 
+                          phần mềm độc hại. Người dùng được khuyến nghị 
+                          sử dụng phần mềm diệt virus cập nhật và cẩn 
+                          trọng khi tải nội dung từ nền tảng.
                         </span>
                       </li>
                     </ul>
                     <p>
-                      Please note that by using our website and making
-                      purchases, you acknowledge and accept these limitations
-                      and policies.
+                      Việc bạn tiếp tục sử dụng trang web và thực hiện 
+                      giao dịch đồng nghĩa với việc bạn hiểu và 
+                      chấp nhận các giới hạn, điều khoản nêu trên.
                     </p>
 
                     <h4 className="info_title">
-                      To Outline Policies and Avoid Abusive Behavior
+                      Liên hệ
                     </h4>
                     <p className="mb-1">
-                      You may direct questions, comments or reports to:
+                      Nếu bạn có bất kỳ câu hỏi, góp ý hay cần phản ánh, xin vui lòng liên hệ qua:
                     </p>
                     <p>
                       <Link
                         className="author_mail"
                         href="mailto:howdy@paradox.com"
                       >
-                        howdy@eduman.com
+                        email nhóm@gmail.com
                       </Link>
                     </p>
                     <h4 className="info_title">
-                      Revisions to this Teams & Condition without Notice
+                      Chính sách thay đổi mà không cần thông báo trước
                     </h4>
                     <p className="mb-0">
-                      This Privacy Policy is dynamic. It will continually
-                      change. You may not assume that it remains the same and
-                      you agree to check the policy each time you visit the site
-                      for changes. Unless, in the sole opinion of the website,
-                      this policy changes so drastically as to suggest a posted
-                      notification on the site or via email, you will receive no
-                      notification of changes to this Privacy Policy nor, under
-                      any circumstances, does this site promise notification.
-                      Your continued use of this site always evidences your
-                      acceptance of the terms this Privacy Policy or any
-                      modifications.
+                      Chính sách Điều khoản & Điều kiện này có thể thay 
+                      đổi mà không cần thông báo trước. Bạn đồng ý rằng 
+                      mỗi lần truy cập website, bạn nên kiểm tra nội dung 
+                      chính sách để cập nhật phiên bản mới nhất. Trừ khi 
+                      thay đổi có mức ảnh hưởng lớn, chúng tôi sẽ 
+                      không gửi thông báo riêng.
                     </p>
                   </div>
                 </div>
@@ -319,26 +300,24 @@ const PrivacyPolicyMain = () => {
                   role="tabpanel"
                 >
                   <div className="terms_conditions_content">
-                    <h3 className="warpper_title">Product Refund Policy</h3>
+                    <h3 className="warpper_title">Chính sách Hoàn tiền Sản phẩm</h3>
                     <p>
-                      At <strong>Orgado</strong>, we strive to provide you with
-                      high-quality products and an exceptional shopping
-                      experience. However, we understand that there may be
-                      instances where you need to return a product. We want to
-                      make the process as smooth as possible for you, so please
-                      take a moment to review our product refund policy.
+                      Tại <strong>GrowSphere</strong>, chúng tôi cam kết mang 
+                      đến cho bạn những sản phẩm chất lượng cao và trải nghiệm 
+                      mua sắm đáng tin cậy. Tuy nhiên, chúng tôi hiểu rằng có 
+                      những trường hợp bạn có thể cần trả lại sản phẩm. Chính 
+                      sách hoàn tiền của chúng tôi được thiết kế để giúp quy 
+                      trình này trở nên đơn giản và minh bạch nhất có thể.
                     </p>
 
-                    <h4 className="info_title">Eligibility for Refund:</h4>
+                    <h4 className="info_title">Điều kiện được hoàn tiền:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          To be eligible for a refund, the product must be in
-                          its original condition, unused, and in its original
-                          packaging.
+                          Sản phẩm còn nguyên vẹn, chưa qua sử dụng, và còn đầy đủ bao bì ban đầu.
                         </span>
                       </li>
                       <li>
@@ -346,8 +325,8 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Returns must be initiated within <strong>[X]</strong>{" "}
-                          days of receiving the product.
+                          Việc yêu cầu hoàn trả phải được thực hiện trong vòng <strong>[X]</strong>{" "}
+                           ngày kể từ khi nhận hàng.
                         </span>
                       </li>
                       <li>
@@ -355,22 +334,19 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Personalized or customized items may not be eligible
-                          for a refund unless they arrive damaged or with a
-                          defect.
+                          Các sản phẩm được cá nhân hóa, thiết kế riêng (như chậu cây khắc tên, kit theo yêu cầu…) <strong>sẽ không được hoàn tiền</strong>, trừ khi bị lỗi kỹ thuật hoặc hư hỏng khi nhận hàng.
                         </span>
                       </li>
                     </ul>
-                    <h4 className="info_title">Initiating a Return:</h4>
+                    <h4 className="info_title">Quy trình yêu cầu hoàn tiền:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          To initiate a return, please contact our customer
-                          support team at [Customer Support Email] or [Customer
-                          Support Phone Number].
+                          Để bắt đầu quy trình hoàn trả sản phẩm, vui lòng liên hệ bộ phận chăm sóc khách hàng qua:
+                          Orgadoadmin@gmail.com.
                         </span>
                       </li>
                       <li>
@@ -378,33 +354,21 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Our customer support team will guide you through the
-                          return process and provide you with a Return
-                          Merchandise Authorization (RMA) number if required.
-                        </span>
-                      </li>
-                      <li>
-                        <span className="list_item_icon">
-                          <i className="fas fa-circle"></i>
-                        </span>
-                        <span className="list_item_text">
-                          Personalized or customized items may not be eligible
-                          for a refund unless they arrive damaged or with a
-                          defect.
+                          Chúng tôi sẽ hướng dẫn bạn chi tiết và, nếu cần, cung cấp mã số xác nhận hoàn hàng (Mã RMA).
                         </span>
                       </li>
                     </ul>
 
-                    <h4 className="info_title">Return Shipping:</h4>
+                    <h4 className="info_title">Phí vận chuyển khi hoàn trả:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Customers are responsible for the cost of return
-                          shipping unless the product arrived damaged or with a
-                          defect.
+                          Khách hàng chịu trách nhiệm về chi phí 
+                          gửi trả sản phẩm, trừ khi sản phẩm bị lỗi 
+                          kỹ thuật hoặc hư hỏng do vận chuyển.
                         </span>
                       </li>
                       <li>
@@ -412,22 +376,23 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          We recommend using a trackable shipping service to
-                          ensure that your return reaches us safely.
+                          Chúng tôi khuyến khích bạn sử dụng dịch vụ 
+                          chuyển phát có mã theo dõi để đảm bảo hàng 
+                          hóa được gửi trả an toàn.
                         </span>
                       </li>
                     </ul>
 
-                    <h4 className="info_title">Inspection and Processing:</h4>
+                    <h4 className="info_title">Kiểm tra và xử lý hoàn tiền:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Once we receive your returned product, our team will
-                          inspect it to ensure it meets our eligibility
-                          criteria.
+                          Sau khi nhận được sản phẩm hoàn trả, 
+                          đội ngũ của chúng tôi sẽ tiến hành kiểm 
+                          tra để đảm bảo sản phẩm đáp ứng điều kiện hoàn tiền.
                         </span>
                       </li>
                       <li>
@@ -435,8 +400,7 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          If the product qualifies for a refund, we will process
-                          the refund within [X] business days.
+                          Nếu sản phẩm đạt yêu cầu, khoản tiền sẽ được hoàn trong vòng <strong>[X]</strong> ngày làm việc.
                         </span>
                       </li>
                       <li>
@@ -444,21 +408,19 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Refunds will be issued to the original payment method
-                          used for the purchase.
+                          Khoản hoàn tiền sẽ được chuyển lại đúng phương thức thanh toán bạn đã sử dụng khi đặt hàng.
                         </span>
                       </li>
                     </ul>
 
-                    <h4 className="info_title">Refund Amount:</h4>
+                    <h4 className="info_title">Giá trị hoàn tiền:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          The refund amount will include the cost of the product
-                          and any applicable taxes.
+                          Khoản tiền hoàn lại sẽ bao gồm <strong>giá trị sản phẩm và các loại thuế (nếu có).</strong>
                         </span>
                       </li>
 
@@ -467,15 +429,14 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Shipping fees are non-refundable unless the return is
-                          due to a shipping error on our part.
+                          <strong>Phí vận chuyển ban đầu sẽ không được hoàn</strong>, trừ khi nguyên nhân trả hàng là do lỗi của chúng tôi.
                         </span>
                       </li>
                     </ul>
 
                     <h4 className="info_title">
                       {" "}
-                      Damaged or Defective Products:
+                      Sản phẩm bị lỗi hoặc hư hỏng:
                     </h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
@@ -483,8 +444,7 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          If you receive a damaged or defective product, please
-                          contact us immediately.
+                          Nếu bạn nhận được sản phẩm bị lỗi hoặc hư hỏng, hãy liên hệ với chúng tôi <strong>ngay lập tức</strong>.
                         </span>
                       </li>
 
@@ -493,61 +453,66 @@ const PrivacyPolicyMain = () => {
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          We may request photos or other documentation to assess
-                          the issue and provide a replacement or refund.
+                          Chúng tôi có thể yêu cầu gửi ảnh sản phẩm hoặc tài liệu xác minh để đánh giá và đưa ra phương án <strong>hoàn tiền hoặc thay thế</strong> phù hợp.
                         </span>
                       </li>
                     </ul>
 
-                    <h4 className="info_title"> Exchanges:</h4>
+                    <h4 className="info_title"> Chính sách đổi sản phẩm:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          We do not offer direct exchanges. If you need a
-                          different product, please return the original item
-                          following our refund policy guidelines and place a new
-                          order.
+                          Chúng tôi không áp dụng hình thức đổi trực tiếp. 
+                          Nếu bạn muốn một sản phẩm khác, vui lòng hoàn trả 
+                          sản phẩm hiện tại theo hướng dẫn, sau đó 
+                          <strong>đặt hàng lại sản phẩm mới.</strong>
                         </span>
                       </li>
                     </ul>
 
-                    <h4 className="info_title"> Non-Refundable Items:</h4>
+                    <h4 className="info_title"> Các mặt hàng không được hoàn tiền:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          Gift cards and downloadable software or digital
-                          products are non-refundable.
+                          Thẻ quà tặng (Gift cards).
+                        </span>
+                      </li>
+                      <li>
+                        <span className="list_item_icon">
+                          <i className="fas fa-circle"></i>
+                        </span>
+                        <span className="list_item_text">
+                          Sản phẩm kỹ thuật số hoặc nội dung số có thể tải về (nếu có).
                         </span>
                       </li>
                     </ul>
-                    <h4 className="info_title"> Changes to this Policy:</h4>
+                    <h4 className="info_title"> Thay đổi chính sách:</h4>
                     <ul className="icon_list  unordered_list_block">
                       <li>
                         <span className="list_item_icon">
                           <i className="fas fa-circle"></i>
                         </span>
                         <span className="list_item_text">
-                          <strong>Orgado</strong> reserves the right to update or
-                          modify this refund policy at any time without prior
-                          notice. Any changes will be effective immediately upon
-                          posting on our website.
+                          <strong>GrowSphere</strong> có quyền cập nhật 
+                          hoặc điều chỉnh chính sách hoàn tiền bất cứ lúc 
+                          nào mà không cần thông báo trước. Mọi thay đổi sẽ 
+                          có hiệu lực ngay khi được đăng tải trên website.
                         </span>
                       </li>
                     </ul>
                     <p>
-                      If you have any questions or concerns regarding our
-                      product refund policy, please do not hesitate to contact
-                      our customer support team. We are here to assist you and
-                      ensure that you have a positive shopping experience with
-                      us. 
+                      Nếu bạn có bất kỳ thắc mắc nào về chính sách hoàn tiền, 
+                      vui lòng liên hệ đội ngũ chăm sóc khách hàng. Chúng tôi 
+                      luôn sẵn sàng hỗ trợ và mong muốn mang lại trải nghiệm 
+                      tốt nhất cho bạn. 
                       <br />
-                      Thank you for choosing <strong>Orgado</strong>!
+                      Xin cảm ơn vì đã tin tưởng <strong>GrowSphere</strong>!
                     </p>
                   </div>
                   <RefundForm/>
