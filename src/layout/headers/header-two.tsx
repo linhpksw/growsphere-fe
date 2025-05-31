@@ -3,8 +3,8 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import useGlobalContext from "../../hooks/use-context";
 import HeaderMiddleTwo from "./header-middle-two";
-import HeaderTopTwo from "./header-top-two";
-import NavMenu from "./navmenu";
+// import HeaderTopTwo from "./header-top-two";
+// import NavMenu from "./navmenu";
 import User from "@/sheardComponent/elements/icons/user";
 import logo from "../../../public/assets/img/logo/logo-2.png";
 import Image from "next/image";
@@ -40,7 +40,7 @@ const HeaderTwo = () => {
   return (
     <>
       <header>
-        <HeaderTopTwo />
+        {/* <HeaderTopTwo /> */}
         <HeaderMiddleTwo />
         <div
           id="header-sticky"
@@ -55,7 +55,7 @@ const HeaderTwo = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-xxl-5 col-xl-5 col-lg-6 d-none d-lg-block">
+              {/* <div className="col-xxl-5 col-xl-5 col-lg-6 d-none d-lg-block">
                 <div className="bd-header__left-3">
                   <div className="main-menu d-none d-none d-lg-block">
                     <nav id="mobile-menu">
@@ -63,13 +63,13 @@ const HeaderTwo = () => {
                     </nav>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xxl-5 col-xl-5 col-lg-3 col-md-6 col-6">
                 <div className="bd-header__right header__right-3">
                   <div className="bd-action__filter-wrapper d-none d-xl-block">
                     <div className="bd-action__filter p-relative">
                       <form action="#">
-                        <input type="text" placeholder="Search products..." />
+                        <input type="text" placeholder="Tìm kiếm sản phẩm..." />
                         <button>
                           <i className="flaticon-magnifiying-glass"></i>
                         </button>
@@ -167,7 +167,7 @@ const HeaderTwo = () => {
           </div>
         </div>
       </header>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <SidebarCart />
       <SidebarWishlist/>
     </>

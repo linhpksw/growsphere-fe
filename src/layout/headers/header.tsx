@@ -3,10 +3,10 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Sidebar from "@/sheardComponent/Sidebar";
 import useGlobalContext from "../../hooks/use-context";
-import HeaderTop from "./header-top";
+// import HeaderTop from "./header-top";
 import NavMenu from "./navmenu";
 import Image from "next/image";
-import whiteLogo from "../../../public/assets/img/logo/logo.png";
+// import whiteLogo from "../../../public/assets/img/logo/logo.png";
 import blackLogo from "../../../public/assets/img/logo/logo-2.png";
 import headerLogo from "../../../public/assets/img/logo/logo-bg.png";
 import hotline from "../../../public/assets/img/icon/action-hotline.png";
@@ -47,7 +47,7 @@ const HeaderOne = () => {
   return (
     <>
       <header>
-        <HeaderTop />
+        {/* <HeaderTop /> */}
         <div id="header-sticky">
           <div className="bd-header__area-2 position-relative">
             <div className="container">
@@ -58,20 +58,20 @@ const HeaderOne = () => {
                       <div className="bd-header__left-2">
                         <div className="bd-header__logo-2 p-relative">
                           <Link href="/">
-                            <Image
+                            {/* <Image
                               className="logo-white"
                               src={whiteLogo}
                               alt="logo"
-                            />
-                            <Image
+                            /> */}
+                            {/* <Image
                               className="logo-black"
                               src={blackLogo}
                               alt="logo"
-                            />
+                            /> */}
                           </Link>
-                          <div className="bd-header__logo-bg">
+                          {/* <div className="bd-header__logo-bg">
                             <Image src={headerLogo} alt="logo-bg" />
-                          </div>
+                          </div> */}
                         </div>
                         <div className="main-menu d-none d-none d-lg-block">
                           <nav id="mobile-menu">
@@ -193,7 +193,7 @@ const HeaderOne = () => {
                             )}
                           </div>
                         </div>
-                        <div className="bd-action__hotline d-none d-xl-block">
+                        {/* <div className="bd-action__hotline d-none d-xl-block">
                           <div className="bd-hotline__inner">
                             <div className="bd-hotline__icon">
                               <Image src={hotline} alt="hotline-icon" />
@@ -205,8 +205,8 @@ const HeaderOne = () => {
                               </Link>
                             </div>
                           </div>
-                        </div>
-                        <div className="header__hamburger d-flex d-xl-none">
+                        </div> */}
+                        {/* <div className="header__hamburger d-flex d-xl-none">
                           <button
                             type="button"
                             className="hamburger-btn"
@@ -218,7 +218,7 @@ const HeaderOne = () => {
                               <span></span>
                             </span>
                           </button>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -229,7 +229,7 @@ const HeaderOne = () => {
         </div>
       </header>
 
-      <Sidebar />
+      {/* <Sidebar /> */}
       <SidebarCart />
       <SidebarWishlist/>
     </>

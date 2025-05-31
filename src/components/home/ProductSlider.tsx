@@ -52,12 +52,12 @@ const ProductSlider = () => {
             <section className="bd-product__area pt-125 pb-95">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-xl-5 col-lg-4">
+                        {/* <div className="col-xl-5 col-lg-4">
                             <div className="bd-section__title-wrapper mb-60">
                                 <span className="bd-sub__title">Organic Products</span>
                                 <h2 className="bd-section__title mb-30">Featured Product</h2>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-xl-7 col-lg-8">
                             <div className="bd-bananna-nav mb-60">
                                 <nav>

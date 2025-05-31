@@ -5,7 +5,7 @@ import BrowseProductSlider from './sub-component/BrowseProductSlider';
 import BrowseProductBanner from './sub-component/BrowseProductBanner';
 import MasalaProductBanner from './sub-component/MasalaProductBanner';
 import ShippingInfo from './sub-component/ShippingInfo';
-import FlashBanner from './sub-component/FlashBanner';
+// import FlashBanner from './sub-component/FlashBanner';
 import axios from 'axios';
 import SidebarTopratedProduct from './sub-component/SidebarTopratedProduct';
 
@@ -36,9 +36,9 @@ const TrendingProducts = () => {
                                     <div className="col-xl-12 col-lg-6">
                                         <ShippingInfo />
                                     </div>
-                                    <div className="col-xl-12 col-lg-6">
+                                    {/* <div className="col-xl-12 col-lg-6">
                                         <FlashBanner/>
-                                    </div>
+                                    </div> */}
                                     <div className="col-xl-12 col-lg-6">
                                         <SidebarTopratedProduct />
                                     </div>

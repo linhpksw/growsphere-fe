@@ -25,24 +25,23 @@ const TrendingProductSlider = ({ trending_product_title }: any) => {
   const [loading, setLoading] = useState<boolean>(false);
   const router = useRouter();
  
-  const menuData = [
-    {
-      id: 1,
-      text: "New Arrival",
-      api: "new-arrival",
-    },
-    {
-      id: 2,
-      text: "Best Sale",
-      api: "best-selling-products",
-    },
-    {
-      id: 3,
-      text: "Trending",
-      api: "trending-products",
-    },
-  ];
-
+ const menuData = [
+  {
+    id: 1,
+    text: "Hàng mới về",
+    api: "new-arrival",
+  },
+  {
+    id: 2,
+    text: "Bán chạy nhất",
+    api: "best-selling-products",
+  },
+  {
+    id: 3,
+    text: "Xu hướng",
+    api: "trending-products",
+  },
+];
   const handleMoldalData = (id: string) => {
     if (id) {
       setOpenModal(!openModal);
@@ -107,7 +106,7 @@ const TrendingProductSlider = ({ trending_product_title }: any) => {
                     }
                     onClick={handleCallApi}
                   >
-                    View All
+                    Tất cả
                   </button>
                   {menuData.map((item) => (
                     <button

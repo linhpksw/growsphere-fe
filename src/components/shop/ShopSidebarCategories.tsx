@@ -59,7 +59,7 @@ const ShopSidebarCategories = () => {
   return (
     <>
       <div className="bd-filter__widget child-content-hidden">
-        <h4 className="bd-filter__widget-title drop-btn">Categories</h4>
+        <h4 className="bd-filter__widget-title drop-btn">Danh mục</h4>
         <div className="bd-filter__content">
           <div onClick={handleViewAll} className="bd-singel__rating">
             <input
@@ -70,8 +70,7 @@ const ShopSidebarCategories = () => {
             />
             <label className="radio-star" htmlFor="view-all-1">
               <div className="bd-product__icon custome-cursor text-capitalize">
-                view all
-              </div>
+tất cả              </div>
             </label>
           </div>
           {categories?.length ? (

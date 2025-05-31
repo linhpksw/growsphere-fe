@@ -21,7 +21,7 @@ const TrendingProducts = () => {
                     <div className="col-xxl-3 col-xl-4 col-lg-6 col-md-8 order-xl-1">
                         <div className="row">
                             <FlashProductSlider />
-                            <FlashBanner />
+                            {/* <FlashBanner /> */}
                             <ProductTestSlider />
                             <DownloadText />
                         </div>

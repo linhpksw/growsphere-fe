@@ -6,7 +6,7 @@ import ServiceSection from './ServiceSection';
 import AboutSection from './AboutSection';
 import ProductSlider from './ProductSlider';
 import ChooseSection from './ChooseSection';
-import FactSection from './FactSection';
+// import FactSection from './FactSection';
 import BlogSection from '../home-three/BlogSection';
 
 
@@ -17,10 +17,10 @@ const HomeMain = () => {
             <HeroSection/>
             <ServiceSection/>
             <AboutSection/>
-            <ProductSlider/>
+            {/* <ProductSlider/> */}
             <ChooseSection/>
-            <FactSection/>
-            <BlogSection/>
+            {/* <FactSection/> */}
+            {/* <BlogSection/> */}
         </>
     );
 };

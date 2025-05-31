@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import useGlobalContext from "../../hooks/use-context";
-import HeaderMiddleThree from "./header-middle-three";
-import HeaderTopThree from "./header-top-three";
+// import HeaderMiddleThree from "./header-middle-three";
+// import HeaderTopThree from "./header-top-three";
 import NavMenu from "./navmenu";
 import logo from "../../../public/assets/img/logo/logo-2.png";
 import support from "../../../public/assets/img/icon/support.png";
@@ -83,8 +83,8 @@ const HeaderThree = () => {
   return (
     <>
       <header>
-        <HeaderTopThree />
-        <HeaderMiddleThree />
+        {/* <HeaderTopThree /> */}
+        {/* <HeaderMiddleThree /> */}
         <div className="bd-header__border">
           <div id="header-sticky" className="bd-header__middle-inner">
             <div className="container">
@@ -183,7 +183,7 @@ const HeaderThree = () => {
                         )}
                       </div>
                     </div>
-                    <div className="header__hamburger d-flex ml-25">
+                    {/* <div className="header__hamburger d-flex ml-25">
                       <button
                         type="button"
                         className="hamburger-btn"
@@ -195,7 +195,7 @@ const HeaderThree = () => {
                           <span></span>
                         </span>
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ const HeaderThree = () => {
                               <span></span>
                               <span></span>
                             </div>
-                            <span>All Categories</span>
+                            <span>Danh mục</span>
                           </div>
                           <div
                             className={
@@ -247,7 +247,7 @@ const HeaderThree = () => {
                                   type="text"
                                   placeholder={
                                     pathName === "/shop"
-                                      ? "Search products..."
+                                      ? "Tìm kiếm sản phẩm..."
                                       : "Search Blogs..."
                                   }
                                   value={searchValue}
@@ -264,7 +264,7 @@ const HeaderThree = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-xxl-4 col-xl-4 col-md-4 col-sm-6">
+                    {/* <div className="col-xxl-4 col-xl-4 col-md-4 col-sm-6">
                       <div className="bd-action__support d-flex justify-content-end">
                         <div className="bd-support__inner">
                           <div className="bd-support__icon">
@@ -276,7 +276,7 @@ const HeaderThree = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -287,7 +287,7 @@ const HeaderThree = () => {
         </div>
       </header>
 
-      <Sidebar />
+      {/* <Sidebar /> */}
       <SidebarCart />
       <SidebarWishlist />
     </>

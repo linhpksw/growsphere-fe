@@ -87,7 +87,7 @@ const ContactForm = () => {
           <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-12">
             <div className="bd-contact__main-wrapper mb-70">
               <div className="bd-section__title-wrapper">
-                <h2 className="bd-section__title mb-50">Get in Touch</h2>
+                <h2 className="bd-section__title mb-50">Liên hệ</h2>
               </div>
               <div className="bd-contact__form">
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -97,34 +97,38 @@ const ContactForm = () => {
                         <input
                           type="text"
                           defaultValue={user?.name && user?.name}
-                          placeholder="Name"
+                          placeholder="Họ và tên"
                           {...register("name", {
-                            required: "name is required",
+                            required: "Vui lòng nhập họ tên",
                           })}
                         />
                         {errors.name && <span>{errors.name.message}</span>}
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div className="bd-single__form-input  mb-20">
-                        <input defaultValue={user?.phone && user?.phone} type="text" placeholder="Phone" {...register("phone", {
-                            required: "phone is required",
-                          })} />
-                          {errors.phone && <span>{errors.phone.message}</span>}
+                      <div className="bd-single__form-input mb-20">
+                        <input 
+                          defaultValue={user?.phone && user?.phone} 
+                          type="text" 
+                          placeholder="Số điện thoại" 
+                          {...register("phone", {
+                            required: "Vui lòng nhập số điện thoại",
+                          })} 
+                        />
+                        {errors.phone && <span>{errors.phone.message}</span>}
                       </div>
                     </div>
                     <div className="col-md-12">
-                      <div className="bd-single__form-input  mb-20">
+                      <div className="bd-single__form-input mb-20">
                         <input
                           type="text"
                           placeholder="Email"
                           defaultValue={user?.email && user?.email}
                           {...register("email", {
-                            required: "Email or UserName is required",
+                            required: "Vui lòng nhập email hoặc tên đăng nhập",
                             pattern: {
-                              value:
-                                /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i,
-                              message: "Invalid email format",
+                              value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i,
+                              message: "Email không hợp lệ",
                             },
                           })}
                         />
@@ -132,13 +136,12 @@ const ContactForm = () => {
                       </div>
                     </div>
                     <div className="col-md-12">
-                      <div className="bd-single__form-input  mb-20">
+                      <div className="bd-single__form-input mb-20">
                         <textarea
-                          
                           id="message"
-                          placeholder="Messages"
+                          placeholder="Nội dung"
                           {...register("message", {
-                            required: "message is required",
+                            required: "Vui lòng nhập nội dung",
                           })}
                         />
                         {errors.message && <span>{errors.message.message}</span>}
@@ -147,7 +150,7 @@ const ContactForm = () => {
                   </div>
                   <div className="contact-btn">
                     <button type="submit" className="bd-fill__btn">
-                      Submit Now
+                      Gửi ngay
                     </button>
                   </div>
                 </form>
@@ -158,7 +161,7 @@ const ContactForm = () => {
             <div className="bd__sidebar-wrapper mb-70">
               <div className="bd-sidebar__support">
                 <div className="bd-sidebar__title">
-                  <h4>Support Contact</h4>
+                  <h4>Thông tin liên hệ</h4>
                 </div>
                 <div className="bd-sidebar__content">
                   <div className="bd-contact__list">
@@ -169,18 +172,11 @@ const ContactForm = () => {
                         </div>
                         <div className="bd-contact__content">
                           <div className="bd-contact__title">
-                            <h4>Phone</h4>
+                            <h4>Điện thoại</h4>
                           </div>
                           <span>
-                            Mobile :{" "}
-                            <a href="tel:(+88)872-670-780">
-                              <span>(+88) 872-670-780</span>
-                            </a>
-                          </span>
-                          <span>
-                            Mobile :{" "}
                             <a href="tel:(+8)422-655-793">
-                              <span>(+8) 422-655 -793</span>
+                              <span>(+84) 964 721 763</span>
                             </a>
                           </span>
                         </div>
@@ -197,30 +193,9 @@ const ContactForm = () => {
                           </div>
                           <span>
                             <a href="mailto:Info@example.com">
-                              Info@example.com
+                              mnanh0126@gmail.com
                             </a>
                           </span>
-                          <span>
-                            <a href="mailto:Info@example.com">
-                              Contact@example.com
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bd-contact__item">
-                      <div className="bd-contact__item-list">
-                        <div className="bd-contact__icon">
-                          <LocationIcon />
-                        </div>
-                        <div className="bd-contact__content">
-                          <div className="bd-contact__title">
-                            <h4>Location</h4>
-                          </div>
-                          <p>
-                            Abbot Favicon Kinney, New York, <br />
-                            USA - 25423
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -232,7 +207,7 @@ const ContactForm = () => {
         </div>
       </div>
     </section>
-  );
+);
 };
 
 export default ContactForm;

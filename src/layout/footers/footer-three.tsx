@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import footerlogo from "../../../public/assets/img/logo/footer-logo.png";
+// import footerlogo from "../../../public/assets/img/logo/footer-logo.png";
 import Image from "next/image";
 const FooterThree = () => {
   return (
@@ -10,38 +10,38 @@ const FooterThree = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-12">
-                <div className="bd-footer__widget text-center mb-40">
+                {/* <div className="bd-footer__widget text-center mb-40">
                   <div className="bd-footer__logo">
                     <Link href="/">
                       <Image src={footerlogo} alt="footer-logo" />
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="bd-footer__widget text-center mb-40">
                   <div className="bd-footer__link">
                     <ul>
                       <li>
-                        <Link href="/about">About Our Company</Link>
+                        <Link href="/about">Về công ty chúng tôi</Link>
                       </li>
                       <li>
-                        <Link href="/shop">Latest Products</Link>
+                        <Link href="/shop">Trang chủ</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/checkout">Payment Type</Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link href="/about">Awards Winnings</Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link href="/about">World Media Partner</Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link href="/shop">Flash Offers</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
-                <div className="bd-footer__widget text-center mb-40">
+                {/* <div className="bd-footer__widget text-center mb-40">
                   <div className="bd-footer__social">
                     <Link href="https://www.facebook.com/" target="_blank">
                       <i className="fab fa-facebook-f"></i>
@@ -67,7 +67,7 @@ const FooterThree = () => {
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -81,12 +81,12 @@ const FooterThree = () => {
                 <ul>
                   <li>All Rights Reserved</li>
                   <li>
-                    Copyrighted by ©2023{" "}
-                    <span>
+                    Copyrighted by ©2025{" "}
+                    {/* <span>
                       <Link href="https://themeforest.net/user/bdevs/portfolio">
                         BDevs
                       </Link>
-                    </span>
+                    </span> */}
                   </li>
                 </ul>
               </div>

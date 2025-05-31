@@ -43,7 +43,7 @@ const SidebarWishlist = () => {
         >
           <div className="cartmini__wrapper">
             <div className="cartmini__title">
-              <h4>Wishlist Products</h4>
+              <h4> Danh sách yêu thích</h4>
               
             </div>
             <div className="cartmini__close">
@@ -121,12 +121,12 @@ const SidebarWishlist = () => {
                   </div>
                   <div className="cartmini__checkout">
                     <div className="cartmini__checkout-title mb-30">
-                      <h4>Subtotal:</h4>
+                      <h4>Tổng:</h4>
                       <span className="subtotal-price">${totalPrice}</span>
                     </div>
                     <div className="cartmini__checkout-btn">
                       <Link onClick={() => setOpenWishlist(false)} className="bd-fill__btn w-100" href="/wishlist">
-                        View Wishlist
+                        Xem danh sách
                       </Link>
                     
                     </div>
@@ -134,7 +134,7 @@ const SidebarWishlist = () => {
                 </>
               ) : (
                 <>
-                  <p className="text-center pt-20 text-capitalize">Your wishlist is empty</p>
+                  <p className="text-center pt-20 text-capitalize">Danh sách của bạn hiện tại đang trống</p>
                 </>
               )}
             </div>

@@ -30,26 +30,26 @@ const ShopSection = () => {
   const [apiEndPoint, setapiEndPoint] = useState<string>("");
 
   const menuData = [
-    {
-      id: 1,
-      text: "New Arrival",
-      api: "new-arrival",
-    },
-    {
-      id: 2,
-      text: "Best Sale",
-      api: "best-selling-products",
-    },
-    {
-      id: 3,
-      text: "Trending",
-      api: "trending-products",
-    },
-    {
-      id: 4,
-      text: "Offers",
-      api: "offer-products",
-    },
+   {
+  id: 1,
+  text: "Sản phẩm mới",
+  api: "new-arrival",
+},
+{
+  id: 2,
+  text: "Bán chạy nhất",
+  api: "best-selling-products",
+},
+{
+  id: 3,
+  text: "Xu hướng",
+  api: "trending-products",
+},
+{
+  id: 4,
+  text: "Khuyến mãi",
+  api: "offer-products",
+}
   ];
 
   const handleInputChange = (e: any) => {
@@ -122,7 +122,7 @@ const ShopSection = () => {
                 <div className="bd-product__filters">
                   <ShopSidebarCategories />
                   <ShopSidebarRetting />
-                  <FlashBanner />
+                  {/* <FlashBanner /> */}
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const ShopSection = () => {
                     <form className="bd-top__filter-input" action="#">
                       <input
                         type="text"
-                        placeholder="Search keyword..."
+                        placeholder="Tìm kiếm..."
                         value={searchValue}
                         onChange={handleInputChange}
                       />

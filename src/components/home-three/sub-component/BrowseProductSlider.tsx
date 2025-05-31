@@ -22,23 +22,24 @@ const BrowseProductSlider = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const router = useRouter();
 
-  const menuData = [
-    {
-      id: 1,
-      text: "New Arrival",
-      api: "new-arrival",
-    },
-    {
-      id: 2,
-      text: "Best Sale",
-      api: "best-selling-products",
-    },
-    {
-      id: 3,
-      text: "Trending",
-      api: "trending-products",
-    },
-  ];
+    const menuData = [
+  {
+    id: 1,
+    text: "Hàng mới về",
+    api: "new-arrival",
+  },
+  {
+    id: 2,
+    text: "Bán chạy nhất",
+    api: "best-selling-products",
+  },
+  {
+    id: 3,
+    text: "Xu hướng",
+    api: "trending-products",
+  },
+];
+
 
   const handleMoldalData = (id: string) => {
     if (id) {
@@ -110,7 +111,7 @@ const BrowseProductSlider = () => {
                       }
                       onClick={handleCallApi}
                     >
-                      View All
+                      Tất cả
                     </button>
 
                     {menuData.map((item) => (
@@ -131,7 +132,7 @@ const BrowseProductSlider = () => {
               </div>
               <div className="bd-trending__btn">
                 <Link className="bd-bn__btn-2" href="/shop">
-                  View All
+                  Tất cả
                 </Link>
               </div>
             </div>
