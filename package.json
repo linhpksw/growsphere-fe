@@ -10,10 +10,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "@react-native-async-storage/async-storage": "^1.19.0",
     "@reduxjs/toolkit": "^1.9.5",
-    "@stripe/react-stripe-js": "^2.1.1",
-    "@stripe/stripe-js": "^1.54.2",
     "@types/next": "^9.0.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
