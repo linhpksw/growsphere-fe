@@ -87,7 +87,7 @@ const HeaderThree = () => {
                                 <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-6">
                                     <div className="bd-header__logo-3">
                                         <Link href="/">
-                                            <Image src={logo} alt="logo" />
+                                            <Image src={logo} alt="logo" width={159} />
                                         </Link>
                                     </div>
                                 </div>
