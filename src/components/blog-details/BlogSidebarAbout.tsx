@@ -1,5 +1,5 @@
 import React from "react";
-import thumb from "../../../public/assets/img/news/comment/comments-2.png";
+import thumb from "../../../public/assets/img/news/comment/comment-2.png";
 import Image from "next/image";
 const BlogSidebarAbout = () => {
   return (

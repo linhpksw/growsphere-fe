@@ -133,7 +133,7 @@ const ShopSection = () => {
                     <form className="bd-top__filter-input" action="#">
                       <input
                         type="text"
-                        placeholder="Search keyword..."
+                        placeholder="Tìm kiếm từ khoá..."
                         value={searchValue}
                         onChange={handleInputChange}
                       />

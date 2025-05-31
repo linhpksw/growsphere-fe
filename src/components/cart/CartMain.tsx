@@ -5,7 +5,7 @@ import CartSection from './CartSection';
 const CartMain = () => {
     return (
         <>
-            <Breadcrumb breadHome='Home' breadMenu='Cart Items'/>
+            <Breadcrumb breadHome='Home' breadMenu='Sản phẩm trong giỏ hàng'/>
             <CartSection/>
         </>
     );

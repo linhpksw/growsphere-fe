@@ -88,7 +88,7 @@ const LoginForm: React.FC = () => {
                         <div className="bd-postbox__singel-input">
                           <input
                             type="text"
-                            placeholder="Enter Your Email"
+                            placeholder="Nhập email của bạn"
                             {...register("email", {
                               required: "Email or UserName is required",
                               pattern: {
@@ -105,7 +105,7 @@ const LoginForm: React.FC = () => {
                         <div className="bd-password-box d-flex justify-content-between">
                           <input
                             type={showPassword ? "text" : "password"}
-                            placeholder="Password (at least 6 characters)"
+                            placeholder="Mật khẩu (ít nhất 6 kí tự)"
                             {...register("password", {
                               required: "Password is required",
                               minLength: 6,
@@ -140,21 +140,21 @@ const LoginForm: React.FC = () => {
                             {...register("rememberMe")}
                           />
                           <label className="sign-check" htmlFor="sing-up">
-                            <span>Remember me</span>
+                            <span>Nhớ mật khẩu</span>
                           </label>
                         </div>
                       </div>
                       <span className="error-message">{loginError && loginError}</span>
                       <div className="bd-sigin__action-button mb-20">
                         <button className="bd-fill__btn w-100" type="submit">
-                          Login now
+                          Đăng nhập
                         </button>
                       </div>
                       <div className="bd-registered__wrapper">
                         <div className="not-register">
-                          <span>Not registered?</span>
+                          <span>Chưa có tài khoản?</span>
                           <span>
-                            <Link href="/register">Sign up</Link>
+                            <Link href="/register">Đăng ký</Link>
                           </span>
                         </div>
                         

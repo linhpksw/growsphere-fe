@@ -246,8 +246,8 @@ const HeaderThree = () => {
                                                                     type="text"
                                                                     placeholder={
                                                                         pathName === '/shop'
-                                                                            ? 'Search products...'
-                                                                            : 'Search Blogs...'
+                                                                            ? 'Tìm kiếm sản phẩm...'
+                                                                            : 'Tìm kiếm Blogs...'
                                                                     }
                                                                     value={searchValue}
                                                                     onChange={handleInputChange}

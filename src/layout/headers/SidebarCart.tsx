@@ -46,7 +46,7 @@ const SidebarCart = () => {
         >
           <div className="cartmini__wrapper">
             <div className="cartmini__title">
-              <h4>Shopping Cart</h4>
+              <h4>Giỏ hàng</h4>
               
             </div>
             <div className="cartmini__close">
@@ -129,10 +129,10 @@ const SidebarCart = () => {
                     </div>
                     <div className="cartmini__checkout-btn">
                       <Link onClick={() => setOpenCart(false)} className="bd-fill__btn w-100" href="/cart">
-                        View cart
+                        Xem giỏ hàng
                       </Link>
                       <Link onClick={() => setOpenCart(false)} className="bd-unfill__btn w-100" href="/checkout">
-                        Checkout
+                        Thanh toán
                       </Link>
                     </div>
                   </div>

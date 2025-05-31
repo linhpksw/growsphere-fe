@@ -11,9 +11,9 @@ const ChooseSection = () => {
         <div className="row">
           <div className="col-12">
             <div className="bd-section__title-wrapper text-center mb-60">
-              <span className="bd-sub__title">Why Choose Us</span>
+              <span className="bd-sub__title">Vì Sao Chọn Chúng Tôi</span>
               <h2 className="bd-section__title mb-30">
-                6 reasons to Choose us
+                6 lý do vì sao nên chọn chúng tôi
               </h2>
             </div>
           </div>

@@ -107,7 +107,7 @@ const TrendingProductSlider = ({ trending_product_title }: any) => {
                     }
                     onClick={handleCallApi}
                   >
-                    View All
+                    Xem tất cả
                   </button>
                   {menuData.map((item) => (
                     <button

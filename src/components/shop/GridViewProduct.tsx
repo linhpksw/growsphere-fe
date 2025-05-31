@@ -56,7 +56,12 @@ const GridViewProduct = ({ products, limit }: any) => {
                         alt="product-img"
                         width={500}
                         height={500}
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ 
+                          objectFit: "cover", 
+                          width: "100%",      
+                          height: "250px",    
+                          borderRadius: "8px"
+                        }}
                       />
                     </Link>
                     <div className="bd-product__action">

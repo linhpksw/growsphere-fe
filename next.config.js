@@ -1,6 +1,6 @@
 module.exports = {
     images: {
-        domains: ['i.ibb.co', 'images.unsplash.com'],
+        domains: ['i.ibb.co', 'images.unsplash.com', 'plus.unsplash.com'],
     },
 
     env: {

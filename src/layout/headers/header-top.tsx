@@ -13,7 +13,7 @@ const HeaderTop = () => {
                                     <div className="bd-topbar__contact">
                                         <ul>
                                             <li><Link href="tel:+(02)587-898-250"><i className="fa-regular fa-phone-flip"></i>+(02) 587 - 898 -250</Link></li>
-                                            <li><Link href=""><i className="fa-solid fa-location-dot"></i>Favicon, New York, USA - 254230</Link></li>
+                                            <li><Link href=""><i className="fa-solid fa-location-dot"></i>Hà Nội, Hoà Lạc</Link></li>
                                         </ul>
                                     </div>
                                 </div>

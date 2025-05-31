@@ -3,40 +3,33 @@ import { NavMenuItem } from "@/interFace/interFace";
 const nav_menus_list:NavMenuItem[] = [
   {id:1,
     link: '/',
-    title: 'Home',
-    hasDropdown: true,
+    title: 'Trang chủ',
     megamenu: false,
-    dropdownItems: [
-      { link: '/', title: 'Home Style 01' },
-      { link: '/home-two', title: 'Home Style 02' },
-      { link: '/home-three', title: 'Home Style 03' },
-    ]
   },
   {id:2,
     link: '/shop',
-    title: 'Shop',
+    title: 'Mua sắm',
     hasDropdown: true,
     megamenu: false,
     dropdownItems: [
-      { link: '/shop', title: 'Shop' },
-      { link: '/wishlist', title: 'Wishlist' },
-      { link: '/cart', title: 'Cart' },
-      { link: '/checkout', title: 'Checkout' },
+      { link: '/wishlist', title: 'Danh sách yêu thích' },
+      { link: '/cart', title: 'Giỏ hàng' },
+      { link: '/checkout', title: 'Thanh toán' },
     ]
   },
   {
     id:3,
     link: '/shop',
-    title: 'Pages',
+    title: 'Trang',
     hasDropdown: true,
     megamenu: false,
     dropdownItems: [
       { link: '/about', title: 'About' },
-      { link: '/team', title: 'Team' },
-      { link: '/register', title: 'Register' },
-      { link: '/login', title: 'Login' },
+      { link: '/team', title: 'Đội' },
+      { link: '/register', title: 'Đăng ký' },
+      { link: '/login', title: 'Đăng nhập' },
       { link: '/faq', title: 'FAQ' },
-      { link: '/privacy-policy', title: 'Privacy Policy' },
+      { link: '/privacy-policy', title: 'Chính sách bảo mật' },
       
     ]
   },
@@ -46,7 +39,7 @@ const nav_menus_list:NavMenuItem[] = [
   },
   {id:5,
     link: '/contact',
-    title: 'Contact',
+    title: 'Liên lạc',
   },
 ]
 

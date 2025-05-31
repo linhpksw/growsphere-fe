@@ -27,7 +27,7 @@ const SidebarTopratedProduct = () => {
           </div>
           <div className="bd-section__arrow">
             <Link href="/shop">
-              View All<i className="fa-regular fa-arrow-right-long"></i>
+              Xem tất cả<i className="fa-regular fa-arrow-right-long"></i>
             </Link>
           </div>
         </div>

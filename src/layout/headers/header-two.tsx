@@ -68,7 +68,7 @@ const HeaderTwo = () => {
                                             <form action="#">
                                                 <input
                                                     type="text"
-                                                    placeholder="Search products..."
+                                                    placeholder="Tìm kiếm sản phẩm..."
                                                 />
                                                 <button>
                                                     <i className="flaticon-magnifiying-glass"></i>
