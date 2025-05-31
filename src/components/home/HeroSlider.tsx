@@ -2,9 +2,9 @@ import React from 'react';
 import { EffectFade, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CountUpContent from '../common/counter/CountUpContent';
-import thumbOne from "../../../public/assets/img/banner/slider/slider-01.jpg"
-import thumbTow from "../../../public/assets/img/banner/slider/slider-02.jpg"
-import thumbThree from "../../../public/assets/img/banner/slider/slider-03.jpg"
+import thumbOne from "../../../public/assets/img/banner/slider/slider-01-image.png"
+import thumbTow from "../../../public/assets/img/banner/slider/slider-02-image.png"
+import thumbThree from "../../../public/assets/img/banner/slider/slider-03-image.png"
 import Image from 'next/image';
 
 const HeroSlider = () => {
@@ -54,9 +54,9 @@ const HeroSlider = () => {
             </div>
             <div className="bd-banner__shape">
                
-                <span className="counter"><CountUpContent number={80} text="k" /></span>
+                <span className="counter"><CountUpContent number={10} text="k" /></span>
                 <span className="bd-banner__shape-line"></span>
-                <p>Metric ton product <br />supplied</p>
+                <p>Sản phẩm đã được <br /> cung cấp đến khách hàng</p>
             </div>
             <div className="bd-banner-pagination banner-pagination-1"></div>
         </div>

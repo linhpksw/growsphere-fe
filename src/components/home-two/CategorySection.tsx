@@ -18,7 +18,7 @@ const CategorySection = () => {
           <div className="col-sm-6">
             <div className="bd-trending__btn text-sm-end mb-40">
               <Link className="bd-bn__btn-2" href="/shop">
-                View All Category
+                Xem tất cả Category
               </Link>
             </div>
           </div>

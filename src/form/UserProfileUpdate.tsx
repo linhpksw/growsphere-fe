@@ -121,7 +121,7 @@ const UserProfileUpdate = () => {
           </div>
           <div className="col-md-6">
             <div className="contact-from-input mb-20">
-              <label htmlFor="Occupation"> Select Gender </label>
+              <label htmlFor="Occupation"> Giới tính </label>
     
               <NiceSelectTwo
                 options={GenderData}

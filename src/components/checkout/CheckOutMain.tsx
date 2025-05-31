@@ -81,7 +81,7 @@ const CheckOutMain = () => {
                         {user?.email ? (
                             <h3>
                                 {' '}
-                                Hi, {user?.name} <span id="showlogin"> Wellcome To Orgado </span>
+                                Hi, {user?.name} <span id="showlogin"> Wellcome To GrowSphere </span>
                             </h3>
                         ) : (
                             <h3>
@@ -105,12 +105,12 @@ const CheckOutMain = () => {
                             {/* billing info */}
                             <div className="col-lg-6">
                                 <div className="checkbox-form">
-                                    <h3>Billing Details</h3>
+                                    <h3>Chi tiết hoá đơn</h3>
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div className="country-select">
                                                 <label>
-                                                    Country <span className="required">*</span>
+                                                    Đất nước <span className="required">*</span>
                                                 </label>
                                                 <NiceSelectTwo
                                                     options={countryes}
@@ -125,7 +125,7 @@ const CheckOutMain = () => {
                                         <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Name <span className="required">*</span>
+                                                    Tên <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -146,7 +146,7 @@ const CheckOutMain = () => {
                                         <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Address <span className="required">*</span>
+                                                    Địa chỉ <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -173,7 +173,7 @@ const CheckOutMain = () => {
                                         <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Town / City <span className="required">*</span>
+                                                    Thị trấn / Thành phố <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"

@@ -46,8 +46,7 @@ const FooterOne = () => {
                                             </Link>{' '}
                                         </span>
                                         <span>
-                                            <i className="fa-solid fa-location-dot"></i>Favicon, New
-                                            York, USA - 25423
+                                            <i className="fa-solid fa-location-dot"></i>Hà Nội, Hoà Lạc
                                         </span>
                                     </div>
                                 </div>
@@ -116,7 +115,7 @@ const FooterOne = () => {
                                 </div>
                                 <div className="bd-footer__subcribe p-relative mb-40">
                                     <form action="#">
-                                        <input type="text" placeholder="Enter Your Email" />
+                                        <input type="text" placeholder="Nhập Email Của Bạn" />
                                         <button className="bd-footer__s-btn">
                                             <i className="fa-solid fa-arrow-right-long"></i>
                                         </button>

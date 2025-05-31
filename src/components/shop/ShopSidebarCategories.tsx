@@ -70,7 +70,7 @@ const ShopSidebarCategories = () => {
             />
             <label className="radio-star" htmlFor="view-all-1">
               <div className="bd-product__icon custome-cursor text-capitalize">
-                view all
+                Xem tất cả
               </div>
             </label>
           </div>

@@ -99,7 +99,7 @@ const RegistrationForm: React.FC = () => {
                       <div className="bd-postbox__singel-input">
                         <input
                           type="text"
-                          placeholder="First Name"
+                          placeholder="Họ"
                           {...register("firstName", {
                             required: "First name is required",
                           })}
@@ -113,7 +113,7 @@ const RegistrationForm: React.FC = () => {
                       <div className="bd-postbox__singel-input">
                         <input
                           type="text"
-                          placeholder="Last Name"
+                          placeholder="Tên"
                           {...register("lastName", {
                             required: "Last name is required",
                           })}
@@ -145,7 +145,7 @@ const RegistrationForm: React.FC = () => {
                         <input
                           id="userEmail"
                           type="text"
-                          placeholder="Phone Number"
+                          placeholder="Số điện thoại"
                           {...register("phone", {
                             required: "phone is required",
                             minLength: 10,
@@ -159,7 +159,7 @@ const RegistrationForm: React.FC = () => {
                       <div className="bd-password-box d-flex justify-content-between">
                         <input
                           type={showPassword ? "text" : "password"}
-                          placeholder="Password (at least 6 characters)"
+                          placeholder="Mật khẩu (ít nhất 6 kí tự)"
                           {...register("password", {
                             required: "Password is required",
                             minLength: 6,
@@ -210,8 +210,8 @@ const RegistrationForm: React.FC = () => {
                         />
                         <label className="sign-check" htmlFor="sing-up">
                           <span>
-                            Accept the terms and{" "}
-                            <Link href="/privacy-policy">Privacy Policy</Link>
+                            Chấp nhận các điều khoản và{" "}
+                            <Link href="/privacy-policy">Chính Sách Bảo Mật</Link>
                           </span>
                         </label>
                       </div>
@@ -228,14 +228,14 @@ const RegistrationForm: React.FC = () => {
                         className="bd-fill__btn w-100"
                         type="submit"
                       >
-                        Register now
+                        Đăng ký 
                       </button>
                     </div>
                     <div className="bd-registered__wrapper">
                       <div className="not-register">
-                        <span>Already Have an Account? </span>
+                        <span>Bạn đã có tài khoản? </span>
                         <span>
-                          <Link href="/login">Log In</Link>
+                          <Link href="/login">Đăng nhập</Link>
                         </span>
                       </div>
                     </div>

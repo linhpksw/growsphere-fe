@@ -59,12 +59,12 @@ const CartSection = () => {
                   <table className="table">
                     <thead>
                       <tr>
-                        <th className="product-thumbnail">Images</th>
-                        <th className="cart-product-name">Product</th>
-                        <th className="product-price">Unit Price</th>
-                        <th className="product-quantity">Quantity</th>
-                        <th className="product-subtotal">Total</th>
-                        <th className="product-remove">Remove</th>
+                        <th className="product-thumbnail">Hình ảnh</th>
+                        <th className="cart-product-name">Sản phẩm</th>
+                        <th className="product-price">Đơn giá</th>
+                        <th className="product-quantity">Số lượng</th>
+                        <th className="product-subtotal">Tổng</th>
+                        <th className="product-remove">Xoá</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -144,7 +144,7 @@ const CartSection = () => {
                           type="submit"
                           onClick={removeAllProduct}
                         >
-                          Clear cart
+                          Xóa giỏ hàng
                         </button>
                       </div>
                     </div>
@@ -153,17 +153,17 @@ const CartSection = () => {
                 <div className="row">
                   <div className="col-md-5 ml-auto">
                     <div className="cart-page-total">
-                      <h2>Cart totals</h2>
+                      <h2>Tổng giá trị giỏ hàng</h2>
                       <ul className="mb-20">
                         <li>
-                          Subtotal <span>${totalPrice}</span>
+                          Tổng tiền tạm tính <span>${totalPrice}</span>
                         </li>
                         <li>
-                          Total <span>${totalPrice}</span>
+                          Tổng <span>${totalPrice}</span>
                         </li>
                       </ul>
                       <Link className="bd-border__btn" href="/checkout">
-                        Proceed to checkout
+                        Tiến hành thanh toán
                       </Link>
                     </div>
                   </div>

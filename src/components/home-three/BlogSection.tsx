@@ -30,7 +30,7 @@ const BlogSection = () => {
           <div className="col-12">
             <div className="bd-section__title-wrapper text-center mb-55">
               <span className="bd-sub__title">News Insight</span>
-              <h2 className="bd-section__title mb-30">News From Orgado</h2>
+              <h2 className="bd-section__title mb-30">News From GrowSphere</h2>
             </div>
           </div>
         </div>
@@ -44,7 +44,12 @@ const BlogSection = () => {
                       <Image
                         width={500}
                         height={500}
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ 
+                          objectFit: "cover", 
+                          width: "100%",     
+                          height: "500px",    
+                          borderRadius: "8px"
+                        }}
                         src={item.img}
                         alt="news-image"
                       />

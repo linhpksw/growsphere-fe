@@ -110,7 +110,7 @@ const BrowseProductSlider = () => {
                       }
                       onClick={handleCallApi}
                     >
-                      View All
+                      Xem tất cả
                     </button>
 
                     {menuData.map((item) => (
@@ -131,7 +131,7 @@ const BrowseProductSlider = () => {
               </div>
               <div className="bd-trending__btn">
                 <Link className="bd-bn__btn-2" href="/shop">
-                  View All
+                  Xem tất cả
                 </Link>
               </div>
             </div>

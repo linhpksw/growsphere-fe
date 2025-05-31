@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import bannerImg from "../../../../public/assets/img/trending/flash/flash-banner-01.jpg";
+import bannerImg from "../../../../public/assets/img/trending/flash/flash-banner-1.jpg";
 import Image from "next/image";
 const FlashBanner = () => {
   return (

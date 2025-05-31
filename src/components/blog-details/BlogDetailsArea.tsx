@@ -1,7 +1,7 @@
 import { blogDataType } from "@/interFace/api-interFace";
 import Link from "next/link";
 import React from "react";
-import thumb from "../../../public/assets/img/news/news-02.jpg";
+import thumb from "../../../public/assets/img/news/news-02.png";
 import Image from "next/image";
 import BlogComments from "./BlogComments";
 import BlogCommentForm from "./BlogCommentForm";
@@ -63,7 +63,7 @@ const BlogDetailsArea = () => {
                             old tosh blag horse.
                           </p>
                           <p className="mb-0">
-                            <cite>Orgado</cite>
+                            <cite>GrowSphere</cite>
                           </p>
                         </blockquote>
                         <p>

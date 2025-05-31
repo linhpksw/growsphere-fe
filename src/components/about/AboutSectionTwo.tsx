@@ -1,8 +1,8 @@
 import React from "react";
-import thumbOne from "../../../public/assets/img/about/about-img-3.jpg";
-import thumbTwo from "../../../public/assets/img/about/about-img-4.jpg";
-import thumbThree from "../../../public/assets/img/about/about-img-5.jpg";
-import authorImg from "../../../public/assets/img/about/about-author.png";
+import thumbOne from "../../../public/assets/img/banner/about-img-3.png";
+import thumbTwo from "../../../public/assets/img/about/about-img-4.png";
+import thumbThree from "../../../public/assets/img/about/about-img-5.png";
+import authorImg from "../../../public/assets/img/about/about-author-image.png";
 import authorSigneture from "../../../public/assets/img/about/author-signature.png";
 import Image from "next/image";
 const AboutSectionTwo = () => {
@@ -26,7 +26,7 @@ const AboutSectionTwo = () => {
               <div className="bd-section__title-wrapper mb-50">
                 <span className="bd-sub__title">About Us</span>
                 <h2 className="bd-section__title mb-30">
-                  We believe in pure and <br /> organic quality
+                  Chúng tôi sẽ mang đến không gian xanh cho các bạn.
                 </h2>
               </div>
               <div className="bd-about__inner">
@@ -35,13 +35,9 @@ const AboutSectionTwo = () => {
                 </div>
                 <div className="bd-about__info">
                   <p>
-                    We had reached a great height in the atmosphere, for the sky
-                    was a dead black, and the stars had ceased to twinkle. By
-                    the same illusion which lifts the horizon of the sea to the
-                    level. Always be able to find the phone that you are looking
-                    for in our offer, have made us stand out in the market, but
-                    they are simply symptoms of our dedication to what we are
-                    doing and our desire to constantly.
+                    Chúng tôi đã vươn tới tầm cao mới trong hành trình chăm sóc cây xanh, khi không gian xung quanh trở nên trong lành và tĩnh lặng như bầu trời đêm không còn ánh sao lấp lánh. Cũng giống như ảo ảnh kéo gần đường chân trời của biển, bộ kit trồng cây của chúng tôi mang thiên nhiên đến gần hơn trong ngôi nhà bạn.
+
+Luôn mang đến cho bạn những sản phẩm cây xanh phù hợp nhất, chính sự tận tâm và khát khao không ngừng hoàn thiện đã giúp chúng tôi khác biệt trên thị trường.
                   </p>
                   <div className="bd-about__author">
                     <div className="bd-about__author-thumb">

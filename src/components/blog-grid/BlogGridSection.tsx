@@ -39,7 +39,12 @@ const BlogGridSection = () => {
                         alt="news-Img"
                         width={500}
                         height={400}
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ 
+                          objectFit: "cover", 
+                          width: "100%",      
+                          height: "250px",    
+                          borderRadius: "8px" 
+                        }}
                       />
                     </Link>
                   </div>

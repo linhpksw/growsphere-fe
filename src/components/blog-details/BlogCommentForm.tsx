@@ -67,13 +67,13 @@ const BlogCommentForm = ({ item }: blogDataInterFace) => {
 
   return (
     <div className="bd-postbox__contact">
-      <h3>Leave a Comment</h3>
+      <h3>Để lại bình luận</h3>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           <div className="col-xxl-12">
             <div className="bd-postbox__singel-input">
               <textarea
-                placeholder="Enter your comment ..."
+                placeholder="Nhập bình luận của bạn ..."
                 {...register("comment", {
                   required: "Password is required",
                   minLength: {
@@ -89,7 +89,7 @@ const BlogCommentForm = ({ item }: blogDataInterFace) => {
             <div className="col-xxl-12">
               <div className="bd-postbox__btn">
                 <button type="submit" className="bd-fill__btn">
-                  Post Comment
+                  Đăng bình luận
                 </button>
               </div>
             </div>

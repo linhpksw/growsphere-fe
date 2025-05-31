@@ -207,7 +207,7 @@ const HeaderOne = () => {
                                                             />
                                                         </div>
                                                         <div className="bd-hotline__text">
-                                                            <span>Contact hotline</span>
+                                                            <span>Liên lạc đường dây nóng</span>
                                                             <Link href="tel:878-185-287">
                                                                 878 - 185 - 287
                                                             </Link>

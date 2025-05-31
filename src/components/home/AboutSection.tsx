@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import thumb1 from "../../../public/assets/img/about/about-big-shape.png";
 import thumb2 from "../../../public/assets/img/about/about-icon.png";
-import thumb3 from "../../../public/assets/img/about/about-img-1.jpg";
-import thumb4 from "../../../public/assets/img/about/about-img-2.jpg";
+import thumb3 from "../../../public/assets/img/about/about-img-1.png";
+import thumb4 from "../../../public/assets/img/about/about-img-2.png";
 import thumb5 from "../../../public/assets/img/about/about-shape-1.png";
 import Image from "next/image";
 const AboutSection = () => {
@@ -24,12 +24,10 @@ const AboutSection = () => {
               <div className="bd-section__title-wrapper mb-35">
                 <span className="bd-sub__title">About Us</span>
                 <h2 className="bd-section__title mb-35">
-                  We believe in pure and organic quality
+                  Chúng tôi sẽ mang đến không gian xanh cho các bạn.
                 </h2>
                 <p>
-                  We had reached a great height in the atmosphere, for the sky
-                  was a dead black, and the stars had ceased to twinkle. By the
-                  same illusion which lifts the horizon of the sea to the level.
+                  Chúng tôi đang chạm tới một tầm cao mới trong hành trình xanh – nơi cuộc sống trở nên trong lành và tự nhiên hơn bao giờ hết. Không còn là những góc nhà tẻ nhạt, mà là không gian tràn ngập sức sống nhờ những bộ kit trồng cây tiện lợi và thuần tự nhiên. Cũng giống như ảo ảnh kéo gần đường chân trời, bộ kit của chúng tôi giúp bạn kéo thiên nhiên lại gần hơn trong chính căn nhà của mình.
                 </p>
               </div>
               <div className="bd-about__content">
@@ -38,10 +36,9 @@ const AboutSection = () => {
                     <Image style={{ width: "100%", height: "100%" }} src={thumb2} alt="about-icon" />
                   </div>
                   <div className="bd-about__text">
-                    <h4>100% Healthy Quality</h4>
+                    <h4>100% Chất lượng vì sức khỏe</h4>
                     <p>
-                      The stars had ceased to twinkle. By the same illusion
-                      which lifts the horizon of the sea to the level.
+                      Những lo toan dần lắng xuống. Cũng giống như ảo ảnh khiến đường chân trời gần lại, bộ kit trồng cây của chúng tôi mang thiên nhiên đến gần bạn hơn bao giờ hết – nhẹ nhàng, tĩnh lặng và đầy sức sống.
                     </p>
                   </div>
                 </div>

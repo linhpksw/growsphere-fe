@@ -87,7 +87,7 @@ const ContactForm = () => {
           <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-12">
             <div className="bd-contact__main-wrapper mb-70">
               <div className="bd-section__title-wrapper">
-                <h2 className="bd-section__title mb-50">Get in Touch</h2>
+                <h2 className="bd-section__title mb-50">Liên hệ với chúng tôi</h2>
               </div>
               <div className="bd-contact__form">
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -147,7 +147,7 @@ const ContactForm = () => {
                   </div>
                   <div className="contact-btn">
                     <button type="submit" className="bd-fill__btn">
-                      Submit Now
+                      Gửi ngay
                     </button>
                   </div>
                 </form>
@@ -158,7 +158,7 @@ const ContactForm = () => {
             <div className="bd__sidebar-wrapper mb-70">
               <div className="bd-sidebar__support">
                 <div className="bd-sidebar__title">
-                  <h4>Support Contact</h4>
+                  <h4>Hỗ trợ liên lạc</h4>
                 </div>
                 <div className="bd-sidebar__content">
                   <div className="bd-contact__list">
@@ -169,7 +169,7 @@ const ContactForm = () => {
                         </div>
                         <div className="bd-contact__content">
                           <div className="bd-contact__title">
-                            <h4>Phone</h4>
+                            <h4>Điện thoại</h4>
                           </div>
                           <span>
                             Mobile :{" "}
@@ -215,11 +215,10 @@ const ContactForm = () => {
                         </div>
                         <div className="bd-contact__content">
                           <div className="bd-contact__title">
-                            <h4>Location</h4>
+                            <h4>Vị trí</h4>
                           </div>
                           <p>
-                            Abbot Favicon Kinney, New York, <br />
-                            USA - 25423
+                            Hà Nội, Hoà Lạc <br />
                           </p>
                         </div>
                       </div>
