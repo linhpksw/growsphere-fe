@@ -237,7 +237,7 @@ const ShopDetailsMain = ({ id }: any) => {
                                                         href="/cart"
                                                     >
                                                         <i className="fal fa-cart-arrow-down"></i>{' '}
-                                                        Add to Cart
+                                                        Thêm Vào Giỏ Hàng
                                                     </Link>
                                                 </span>
                                             </div>
@@ -254,7 +254,7 @@ const ShopDetailsMain = ({ id }: any) => {
                                                             }
                                                         >
                                                             <i className="far fa-heart"></i>
-                                                            <span>Add to Wishlist</span>
+                                                            <span>Thêm Vào Danh Sách Yêu Thích</span>
                                                         </span>
                                                     </li>
                                                     <li>
@@ -282,7 +282,7 @@ const ShopDetailsMain = ({ id }: any) => {
                                                 </ul>
                                             </div>
                                             <div className="bd__safe-checkout">
-                                                <h5>Guaranteed Safe Checkout</h5>
+                                                <h5>Thanh toán an toàn được đảm bảo</h5>
                                                 <a href="#">
                                                     <Image src={discover} alt="Payment Image" />
                                                 </a>

@@ -38,7 +38,7 @@ const ProfileSection = () => {
             )}
           </div>
           <div className="student-profile-author-text">
-            <span>Hello,</span>
+            <span>Xin chào,</span>
             <h3 className="student-profile-author-name text-capitalize"> {user?.name} </h3>
           </div>
         </div>
@@ -53,12 +53,12 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="home-tab"
                 >
-                  <h4 className="mb-25">Dashboard</h4>
+                  <h4 className="mb-25">Số liệu</h4>
                   <div className="student-profile-content-fact">
                     <DashboardCounter />
                     <div className="row">
                       <div className="col-lg-12">
-                        <h4 className="mb-25">My Purches Products</h4>
+                        <h4 className="mb-25">Sản Phẩm Đã Mua</h4>
 
                         <DefaultDashboard />
                       </div>
@@ -71,7 +71,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                 >
-                  <h4 className="mb-25">My Profile</h4>
+                  <h4 className="mb-25">Hồ Sơ Của Tôi</h4>
                   <MyProfile />
                 </div>
 
@@ -81,7 +81,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="wishlist-tab"
                 >
-                  <h4 className="mb-25">Payment Info</h4>
+                  <h4 className="mb-25">Thông Tin Thanh Toán</h4>
                   <div className="student-profile-wishlist">
                     <div className="row">
                       <PaymentInfo/>
@@ -95,7 +95,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="reviews-tab"
                 >
-                  <h4 className="mb-25">Reviews</h4>
+                  <h4 className="mb-25">Đánh Giá</h4>
                   <UserReviews />
                 </div>
 
@@ -105,7 +105,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="comments-tab"
                 >
-                  <h4 className="mb-25">Comments</h4>
+                  <h4 className="mb-25">Bình luận</h4>
                   <UserComments/>
                 </div>
 
@@ -115,7 +115,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="history-tab"
                 >
-                  <h4 className="mb-25">Order History</h4>
+                  <h4 className="mb-25">Lịch Sử Đặt Hàng</h4>
                   <OrderHistory />
                 </div>
 
@@ -125,7 +125,7 @@ const ProfileSection = () => {
                   role="tabpanel"
                   aria-labelledby="setting-tab"
                 >
-                  <h4 className="mb-25">Settings</h4>
+                  <h4 className="mb-25">Cài Đặt</h4>
                   <UpdateProfile />
                 </div>
               </div>

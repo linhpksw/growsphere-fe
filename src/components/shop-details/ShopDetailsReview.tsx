@@ -31,7 +31,7 @@ const ShopDetailsReview = ({ product, newReview, setnewReview }: any) => {
               role="tab"
               aria-selected="false"
             >
-              Description
+              Mô tả
             </Link>
             <Link
               className="nav-item nav-link active"
@@ -41,7 +41,7 @@ const ShopDetailsReview = ({ product, newReview, setnewReview }: any) => {
               role="tab"
               aria-selected="true"
             >
-              Reviews
+              Đánh giá
             </Link>
           </div>
         </nav>

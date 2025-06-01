@@ -30,12 +30,12 @@ const WishlistSection = () => {
                   <table className="table">
                     <thead>
                       <tr>
-                        <th className="product-thumbnail">Images</th>
-                        <th className="cart-product-name">Product</th>
-                        <th className="product-price">Unit Price</th>
-                        <th className="product-quantity">Add to cart</th>
-                        <th className="product-subtotal">Total</th>
-                        <th className="product-remove">Remove</th>
+                        <th className="product-thumbnail">Hình Ảnh</th>
+                        <th className="cart-product-name">Sản Phẩm</th>
+                        <th className="product-price">Đơn Giá</th>
+                        <th className="product-quantity">Thêm Vào Giỏ Hàng</th>
+                        <th className="product-subtotal">Tổng</th>
+                        <th className="product-remove">Xoá</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -65,7 +65,7 @@ const WishlistSection = () => {
                               className="bd-border__btn"
                               onClick={() => dispatch(cart_product(item))}
                             >
-                              Add to Cart
+                              Thêm Vào Giỏ Hàng
                             </button>
                           </td>
                           <td className="product-subtotal">

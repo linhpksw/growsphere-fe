@@ -135,7 +135,7 @@ const DefaultDashboard = () => {
             </>
           ) : (
             <>
-              <p className="text-center">No Purches Product </p>
+              <p className="text-center">Không Có Sản Phẩm Nào Đã Thanh Toán </p>
             </>
           )}
         </div>
