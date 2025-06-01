@@ -139,7 +139,7 @@ const SidebarCart = () => {
                 </>
               ) : (
                 <>
-                  <p className="text-center pt-20">Your cart is empty</p>
+                  <p className="text-center pt-20">Giỏ hàng trống</p>
                 </>
               )}
             </div>

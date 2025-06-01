@@ -25,7 +25,7 @@ const ShopSidebarRetting = () => {
   return (
     <>
       <div className="bd-filter__widget child-content-hidden">
-        <h4 className="bd-filter__widget-title drop-btn">Ratings</h4>
+        <h4 className="bd-filter__widget-title drop-btn">Đánh Giá</h4>
         <div className="bd-filter__content">
           {rattings?.length ?
             rattings.map((item, index) => (

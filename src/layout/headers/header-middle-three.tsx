@@ -18,18 +18,15 @@ const HeaderMiddleThree = () => {
                         <div className="bd-treak__right bd-treak__right3">
                             <div className="border-lefts">
                                 <select name="lan-select" id="lan-select" className="language-select">
-                                    <option defaultValue="1">English</option>
-                                    <option defaultValue="2">Hindi</option>
-                                    <option defaultValue="3">Arabic</option>
-                                    <option defaultValue="4">Bengali</option>
-                                    <option defaultValue="5">French</option>
+                                    <option defaultValue="1">Vietnamese</option>
+                                    <option defaultValue="2">English</option>                   
                                 </select>
                             </div>
                             <div className="border-left">
                                 <select name="currency-select" id="currency-select" className="currency-select border-left">
-                                    <option defaultValue="1">USD</option>
+                                    <option defaultValue="1">VNĐ</option>
                                     <option defaultValue="2">EUR</option>
-                                    <option defaultValue="3">JPY</option>
+                                    <option defaultValue="3">USD</option>
                                     <option defaultValue="4">GBP</option>
                                 </select>
                             </div>

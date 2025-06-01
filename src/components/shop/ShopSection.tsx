@@ -32,22 +32,22 @@ const ShopSection = () => {
     const menuData = [
         {
             id: 1,
-            text: 'New Arrival',
+            text: 'Sản phẩm mới',
             api: 'new-arrival',
         },
         {
             id: 2,
-            text: 'Best Sale',
+            text: 'Ưu đãi tốt nhất',
             api: 'best-selling-products',
         },
         {
             id: 3,
-            text: 'Trending',
+            text: 'Xu hướng',
             api: 'trending-products',
         },
         {
             id: 4,
-            text: 'Offers',
+            text: 'Ưu đãi',
             api: 'offer-products',
         },
     ];
@@ -122,7 +122,7 @@ const ShopSection = () => {
                                         <form className="bd-top__filter-input" action="#">
                                             <input
                                                 type="text"
-                                                placeholder="Search keyword..."
+                                                placeholder="Tìm kiếm từ khoá..."
                                                 value={searchValue}
                                                 onChange={handleInputChange}
                                             />

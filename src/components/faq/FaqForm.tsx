@@ -7,7 +7,7 @@ const FaqForm = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="bd-section__title-wrapper text-center mb-55">
-                            <h2 className="bd-section__title custome-title-size mb-30">Still stuck ask directly</h2>
+                            <h2 className="bd-section__title custome-title-size mb-30">Nếu còn thắc mắc, bạn hãy hỏi trực tiếp nhé!</h2>
                         </div>
                     </div>
                 </div>
@@ -18,12 +18,12 @@ const FaqForm = () => {
                                 <div className="row">
                                     <div className="col-xxl-6 col-xl-6 col-lg-6">
                                         <div className="bd-postbox__singel-input">
-                                            <input type="text" placeholder="Your Name"/>
+                                            <input type="text" placeholder="Tên của bạn"/>
                                         </div>
                                     </div>
                                     <div className="col-xxl-6 col-xl-6 col-lg-6">
                                         <div className="bd-postbox__singel-input">
-                                            <input type="email" placeholder="Your Email"/>
+                                            <input type="email" placeholder="Email của bạn"/>
                                         </div>
                                     </div>
                                     <div className="col-xxl-6">
@@ -33,18 +33,18 @@ const FaqForm = () => {
                                     </div>
                                     <div className="col-xxl-6">
                                         <div className="bd-postbox__singel-input">
-                                            <input type="text" placeholder="subject"/>
+                                            <input type="text" placeholder="Chủ đề"/>
                                         </div>
                                     </div>
                                     <div className="col-xxl-12">
                                         <div className="bd-postbox__singel-input">
-                                            <textarea placeholder="Enter your comment ..."></textarea>
+                                            <textarea placeholder="Nhập bình luận của bạn ..."></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xxl-12">
                                     <div className="bd-postbox__btn">
-                                        <button type="submit" className="bd-fill__btn">Submit</button>
+                                        <button type="submit" className="bd-fill__btn">Gửi đơn</button>
                                     </div>
                                 </div>
                             </form>

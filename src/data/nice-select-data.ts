@@ -16,11 +16,11 @@ export const GenderData = [
 export const countryes = [
     {
         id: 1,
-        categoryName: 'Australia',
+        categoryName: 'Vietnam',
     },
     {
         id: 2,
-        categoryName: 'Algeria',
+        categoryName: 'England',
     },
     {
         id: 3,

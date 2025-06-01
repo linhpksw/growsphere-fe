@@ -127,7 +127,7 @@ const ListViewProduct = ({ products, limit }: any) => {
         </>
       ) : (
         <>
-          <p>No Product</p>
+          <p>Không có sản phẩm</p>
         </>
       )}
     </>

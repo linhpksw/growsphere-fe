@@ -97,9 +97,9 @@ const ContactForm = () => {
                         <input
                           type="text"
                           defaultValue={user?.name && user?.name}
-                          placeholder="Name"
+                          placeholder="Tên"
                           {...register("name", {
-                            required: "name is required",
+                            required: "Tên bắt buộc",
                           })}
                         />
                         {errors.name && <span>{errors.name.message}</span>}
@@ -107,8 +107,8 @@ const ContactForm = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="bd-single__form-input  mb-20">
-                        <input defaultValue={user?.phone && user?.phone} type="text" placeholder="Phone" {...register("phone", {
-                            required: "phone is required",
+                        <input defaultValue={user?.phone && user?.phone} type="text" placeholder="Điện Thoại" {...register("phone", {
+                            required: "Số điện thoại bắt buộc",
                           })} />
                           {errors.phone && <span>{errors.phone.message}</span>}
                       </div>
@@ -124,7 +124,7 @@ const ContactForm = () => {
                             pattern: {
                               value:
                                 /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i,
-                              message: "Invalid email format",
+                              message: "Email không hợp lệ",
                             },
                           })}
                         />
@@ -136,9 +136,9 @@ const ContactForm = () => {
                         <textarea
                           
                           id="message"
-                          placeholder="Messages"
+                          placeholder="Tin nhắn"
                           {...register("message", {
-                            required: "message is required",
+                            required: "Tin nhắn bắt buộc",
                           })}
                         />
                         {errors.message && <span>{errors.message.message}</span>}

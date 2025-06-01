@@ -34,9 +34,7 @@ const FooterOne = () => {
                                         </Link>
                                     </div>
                                     <p>
-                                        Sed perspiciatis unde omnis natus error voluptatem accusan
-                                        doloreqe laudantium totam aperiam eaque sipsa quae abillo
-                                        inventore
+                                        Chúng tôi cam kết mang đến cho bạn những bộ kit trồng cây chất lượng, giúp bạn dễ dàng phát triển không gian xanh tại nhà.
                                     </p>
                                     <div className="bd-footer__contact">
                                         <span>
@@ -55,27 +53,27 @@ const FooterOne = () => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                             <div className="bd-footer__widget footer-col-2 mb-60">
                                 <div className="bd-footer__widget-title">
-                                    <h4>Quick Links</h4>
+                                    <h4>Các Liên Kết</h4>
                                 </div>
                                 <div className="bd-footer__link">
                                     <ul>
                                         <li>
-                                            <Link href="/about">About Our Company</Link>
+                                            <Link href="/about">Về Website Của Chúng Tôi</Link>
                                         </li>
                                         <li>
-                                            <Link href="/wishlist">Wishlist</Link>
+                                            <Link href="/wishlist">Danh Sách Yêu Thích</Link>
                                         </li>
                                         <li>
-                                            <Link href="/cart">Cart</Link>
+                                            <Link href="/cart">Giỏ Hàng</Link>
                                         </li>
                                         <li>
-                                            <Link href="/shop">Flash Offers</Link>
+                                            <Link href="/shop">Khuyến Mãi</Link>
                                         </li>
                                         <li>
-                                            <Link href="/privacy-policy">Terms & Condition</Link>
+                                            <Link href="/privacy-policy">Điều khoản & Điều kiện</Link>
                                         </li>
                                         <li>
-                                            <Link href="/privacy-policy">Privacy Policy</Link>
+                                            <Link href="/privacy-policy">Chính Sách Bảo Mật</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -84,7 +82,6 @@ const FooterOne = () => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                             <div className="bd-footer__widget footer-col-3 mb-60">
                                 <div className="bd-footer__widget-title">
-                                    <h4>Categories</h4>
                                 </div>
                                 <div className="bd-footer__link">
                                     <ul>
@@ -111,7 +108,7 @@ const FooterOne = () => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                             <div className="bd-footer__widget mb-60">
                                 <div className="bd-footer__widget-title">
-                                    <h4>Newsletter</h4>
+                                    <h4>Bản Tin</h4>
                                 </div>
                                 <div className="bd-footer__subcribe p-relative mb-40">
                                     <form action="#">
@@ -143,12 +140,11 @@ const FooterOne = () => {
                         <div className="col-xl-6 col-lg-6">
                             <div className="bd-footer__copyright">
                                 <ul>
-                                    <li>All Rights Reserved</li>
+                                    <li>Bản quyền thuộc về chúng tôi</li>
                                     <li>
-                                        Copyrighted by ©2023{' '}
+                                        GrowSphere{' '}
                                         <span>
                                             <Link href="https://themeforest.net/user/bdevs/portfolio">
-                                                BDevs{' '}
                                             </Link>{' '}
                                         </span>
                                     </li>
@@ -159,7 +155,7 @@ const FooterOne = () => {
                             <div className="bd-footer__payment">
                                 <ul>
                                     <li>
-                                        <span>We Support</span>
+                                        <span>Chúng tôi hỗ trợ</span>
                                     </li>
                                     <li>
                                         <Link href="#">

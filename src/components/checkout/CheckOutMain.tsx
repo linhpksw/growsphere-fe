@@ -81,18 +81,17 @@ const CheckOutMain = () => {
                         {user?.email ? (
                             <h3>
                                 {' '}
-                                Hi, {user?.name} <span id="showlogin"> Wellcome To GrowSphere </span>
+                                Hi, {user?.name}{' '}
+                                <span id="showlogin"> Wellcome To GrowSphere </span>
                             </h3>
                         ) : (
                             <h3>
-                                Returning customer? <span id="showlogin">Click here to login</span>
+                                Khách hàng cũ? <span id="showlogin">Click để đăng nhập</span>
                             </h3>
                         )}
                         <div id="checkout-login" className={`coupon-content d-block`}>
                             <div className="coupon-info">
-                                <p className="coupon-text">
-                                    Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed
-                                    est sit amet ipsum luctus.
+                                <p className="coupon-text">                   
                                 </p>
                                 {/* login form  */}
 
@@ -130,7 +129,7 @@ const CheckOutMain = () => {
                                                 <input
                                                     type="text"
                                                     defaultValue={user?.email && user.name}
-                                                    placeholder="Enter Your Name"
+                                                    placeholder="Nhập tên của bạn"
                                                     {...register('Fname', {
                                                         required: 'Name is required',
                                                     })}
@@ -150,7 +149,7 @@ const CheckOutMain = () => {
                                                 </label>
                                                 <input
                                                     type="text"
-                                                    placeholder="Street address"
+                                                    placeholder="Địa chỉ"
                                                     {...register('Address', {
                                                         required: 'Address is required',
                                                     })}
@@ -166,18 +165,19 @@ const CheckOutMain = () => {
                                             <div className="checkout-form-list">
                                                 <input
                                                     type="text"
-                                                    placeholder="Apartment, suite, unit etc. (optional)"
+                                                    placeholder="Căn hộ, phòng, đơn vị, v.v. (không bắt buộc)"
                                                 />
                                             </div>
                                         </div>
                                         <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Thị trấn / Thành phố <span className="required">*</span>
+                                                    Thị trấn / Thành phố{' '}
+                                                    <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
-                                                    placeholder="Town / City"
+                                                    placeholder="Thị trấn / Thành phố"
                                                     {...register('City', {
                                                         required: 'Password is required',
                                                     })}
@@ -193,12 +193,12 @@ const CheckOutMain = () => {
                                         <div className="col-md-6">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Postcode / Zip{' '}
+                                                    Mã bưu điện / Mã ZIP{' '}
                                                     <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
-                                                    placeholder="Postcode / Zip"
+                                                    placeholder="Mã bưu điện / Mã ZIP"
                                                     {...register('Postcode', {
                                                         required: 'Postcode is required',
                                                     })}
@@ -213,7 +213,7 @@ const CheckOutMain = () => {
                                         <div className="col-md-6">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Email Address{' '}
+                                                    Địa chỉ Email{' '}
                                                     <span className="required">*</span>
                                                 </label>
                                                 <input
@@ -234,12 +234,12 @@ const CheckOutMain = () => {
                                         <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Phone <span className="required">*</span>
+                                                    Điện thoại <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
                                                     defaultValue={user?.email && user.phone}
-                                                    placeholder="Phone Number"
+                                                    placeholder="Số điện thoại"
                                                     {...register('Phone', {
                                                         required: 'Phone is required',
                                                     })}
@@ -258,13 +258,13 @@ const CheckOutMain = () => {
                             {/* order info */}
                             <div className="col-lg-6">
                                 <div className="your-order mb-30 ">
-                                    <h3>Your order</h3>
+                                    <h3>Đơn hàng của bạn</h3>
                                     <div className="your-order-table table-responsive">
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th className="product-name">Product</th>
-                                                    <th className="product-total">Total</th>
+                                                    <th className="product-name">Sản phẩm</th>
+                                                    <th className="product-total">Tổng</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -287,7 +287,7 @@ const CheckOutMain = () => {
                                             </tbody>
                                             <tfoot>
                                                 <tr className="cart-subtotal">
-                                                    <th>Cart Subtotal</th>
+                                                    <th>Tổng tiền giỏ hàng</th>
                                                     <td>
                                                         <span className="amount">
                                                             ${totalPrice}
@@ -295,7 +295,7 @@ const CheckOutMain = () => {
                                                     </td>
                                                 </tr>
                                                 <tr className="order-total">
-                                                    <th>Order Total</th>
+                                                    <th>Tổng hoá đơn</th>
                                                     <td>
                                                         <strong>
                                                             <span className="amount">
@@ -320,7 +320,7 @@ const CheckOutMain = () => {
                                                         aria-expanded="true"
                                                         aria-controls="bankOne"
                                                     >
-                                                        Direct Bank Transfer
+                                                        Chuyển khoản ngân hàng trực tiếp
                                                     </button>
                                                 </h2>
                                                 <div
@@ -330,11 +330,12 @@ const CheckOutMain = () => {
                                                     data-bs-parent="#checkoutAccordion"
                                                 >
                                                     <div className="accordion-body">
-                                                        Make your payment directly into our bank
-                                                        account. Please use your Order ID as the
-                                                        payment reference. Your order won’t be
-                                                        shipped until the funds have cleared in our
-                                                        account.
+                                                        Vui lòng thanh toán trực tiếp vào tài khoản
+                                                        ngân hàng của chúng tôi. Hãy sử dụng Mã Đơn
+                                                        Hàng của bạn làm mã tham chiếu khi thanh
+                                                        toán. Đơn hàng của bạn sẽ được xử lý và gửi
+                                                        đi sau khi chúng tôi nhận được khoản thanh
+                                                        toán.
                                                     </div>
                                                 </div>
                                             </div>
@@ -348,7 +349,7 @@ const CheckOutMain = () => {
                                                         aria-expanded="false"
                                                         aria-controls="payment"
                                                     >
-                                                        Cheque Payment
+                                                        Thanh toán bằng séc
                                                     </button>
                                                 </h2>
                                                 <div
@@ -358,9 +359,9 @@ const CheckOutMain = () => {
                                                     data-bs-parent="#checkoutAccordion"
                                                 >
                                                     <div className="accordion-body">
-                                                        Please send your cheque to Store Name, Store
-                                                        Street, Store Town, Store State / County,
-                                                        Store Postcode.
+                                                        Vui lòng gửi séc của bạn đến: Tên cửa hàng,
+                                                        Đường cửa hàng, Thị trấn cửa hàng, Tỉnh /
+                                                        Huyện cửa hàng, Mã bưu điện cửa hàng.
                                                     </div>
                                                 </div>
                                             </div>
@@ -372,8 +373,9 @@ const CheckOutMain = () => {
                                                     data-bs-parent="#checkoutAccordion"
                                                 >
                                                     <div className="accordion-body">
-                                                        Pay via PayPal; you can pay with your credit
-                                                        card if you don’t have a PayPal account.
+                                                        Thanh toán qua PayPal; bạn cũng có thể thanh
+                                                        toán bằng thẻ tín dụng nếu không có tài
+                                                        khoản PayPal.
                                                     </div>
                                                 </div>
                                             </div>
@@ -410,7 +412,7 @@ const CheckOutMain = () => {
                                                                 : 'custome_disable'
                                                         }
                                                     >
-                                                        Add Product For Checkout
+                                                        Thêm sản phẩm vào giỏ hàng để thanh toán
                                                     </button>
                                                 </>
                                             )}

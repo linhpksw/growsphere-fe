@@ -5,27 +5,27 @@ import CountUpContent from '../common/counter/CountUpContent';
 const CounterItem = [
     {
         id: 1,
-        number: 89,
+        number: 10,
         numberLetter: 'k+',
-        title: 'Organic Products',
+        title: 'Sản phẩm hữu cơ',
     },
     {
         id: 2,
-        number: 80,
+        number: 7,
         numberLetter: 'k+',
-        title: 'Metric to supplied',
+        title: 'Lượng cây đã cung cấp',
     },
     {
         id: 3,
-        number: 40,
+        number: 5,
         numberLetter: 'k+',
-        title: 'Experienced Farmer',
+        title: 'Nông dân kinh nghiệm',
     },
     {
         id: 4,
-        number: 25,
+        number: 6,
         numberLetter: 'k+',
-        title: 'Organic Awards',
+        title: 'Giải thưởng về cây xanh',
     }
 ]
 

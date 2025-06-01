@@ -22,8 +22,8 @@ const TeamSection = () => {
         <div className="row">
           <div className="col-12">
             <div className="bd-section__title-wrapper text-center mb-60">
-              <span className="bd-sub__title">Professional Team</span>
-              <h2 className="bd-section__title mb-30">Meat the Farmers</h2>
+              <span className="bd-sub__title">Đội Chuyên Nghiệp</span>
+              <h2 className="bd-section__title mb-30">Gặp gỡ các nông dân</h2>
             </div>
           </div>
         </div>

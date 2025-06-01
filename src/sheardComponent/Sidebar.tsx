@@ -63,7 +63,7 @@ const Sidebar = () => {
                                         <form action="#">
                                             <input
                                                 type="text"
-                                                placeholder="What are you searching for?"
+                                                placeholder="Bạn đang tìm kiếm gì?"
                                             />
                                             <button type="submit">
                                                 <i className="far fa-search"></i>
@@ -74,7 +74,7 @@ const Sidebar = () => {
                                         <MobileMenu />
                                     </nav>
                                     <div className="offcanvas__contact mt-30 mb-20">
-                                        <h4>Contact Info</h4>
+                                        <h4>THÔNG TIN LIÊN LẠC</h4>
                                         <ul>
                                             <li className="d-flex align-items-center">
                                                 <div className="offcanvas__contact-icon mr-15">
@@ -85,7 +85,7 @@ const Sidebar = () => {
                                                         target="_blank"
                                                         href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
                                                     >
-                                                        12/A, Mirnada City Tower, NYC
+                                                        FPT University, Hoà Lạc
                                                     </Link>
                                                 </div>
                                             </li>
@@ -115,7 +115,7 @@ const Sidebar = () => {
                                     </div>
                                     <div className="offcanvas__social">
                                         <ul>
-                                            <li>Share:</li>
+                                            <li>Chia sẻ:</li>
                                             <li>
                                                 <Link
                                                     href="https://www.facebook.com/"

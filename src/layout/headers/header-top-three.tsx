@@ -8,13 +8,13 @@ const HeaderTopThree = () => {
                 <div className="row align-content-center">
                     <div className="col-xxl-6 col-xl-6 col-md-8 col-sm-7">
                         <div className="bd-topbar__text">
-                            <p>We ship to over 150 countries & region</p>
+                            <p>Chúng tôi giao hàng quanh khu vực Hà Nội & Hoà Lạc</p>
                         </div>
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-md-4 col-sm-5">
                         <div className="bd-header__top-link justify-content-end">
-                            <Link href="/about">About Us</Link>
-                            <Link href="/wishlist">Wishlist</Link>
+                            <Link href="/about">Về Chúng Tôi</Link>
+                            <Link href="/wishlist">Danh Sách Yêu Thích</Link>
                         </div>
                     </div>
                 </div>

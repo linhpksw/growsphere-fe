@@ -21,7 +21,7 @@ const HeaderTop = () => {
                             <div className="col-xxl-4 col-xl-4 col-lg-3">
                                 <div className="bd-top__bar-social">
                                 <ul>
-                            <li>Share:</li>
+                            <li>Chia sẻ:</li>
                             <li>
                               <Link href="https://www.facebook.com/" target="_blank">
                                 <i className="fab fa-facebook-f"></i>

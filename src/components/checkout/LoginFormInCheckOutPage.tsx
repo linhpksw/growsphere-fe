@@ -45,7 +45,7 @@ const LoginFormInCheckOutPage = () => {
             setLoading(false);
             router.push("/checkout");
             break;
-          case "password not Match":
+          case "Mật khẩu không đúng":
            
             setLoading(false);
             setloginError("Password Not Match");
@@ -77,12 +77,12 @@ const LoginFormInCheckOutPage = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <p className="form-row-first">
           <label>
-            Username or email <span className="required">*</span>
+            Tên đăng nhập hoặc email <span className="required">*</span>
           </label>
           <input
             type="text"
             {...register("email", {
-              required: "Email or UserName is required",
+              required: "Email or Tên đăng nhập bắt buộc",
               pattern: {
                 value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i,
                 message: "Invalid email format",
@@ -93,15 +93,15 @@ const LoginFormInCheckOutPage = () => {
         </p>
         <p className="form-row-last">
           <label>
-            Password <span className="required">*</span>
+            Mật khẩu <span className="required">*</span>
           </label>
           <input
             type="password"
             {...register("password", {
-              required: "Password is required",
+              required: "Mật khẩu bắt buộc",
               minLength: {
                 value: 6,
-                message: "Password must be at least 6 characters long",
+                message: "Mật khẩu ít nhất chứa 6 kí tự",
               },
             })}
           />
@@ -109,16 +109,16 @@ const LoginFormInCheckOutPage = () => {
         </p>
         <p className="form-row d-flex">
           <button className="bd-fill__btn" type="submit">
-            Login
+            Đăng nhập
           </button>
           <label>
             <input className="e-check-input" id="cbox" type="checkbox" {...register("rememberMe")} />
-            Remember me
+            Nhớ mật khẩu
           </label>
         </p>
         <span>{loginError && loginError}</span>
         <p className="lost-password">
-          <a href="#">Lost your password?</a>
+          <a href="#">Quên mật khẩu?</a>
         </p>
       </form>
     </>

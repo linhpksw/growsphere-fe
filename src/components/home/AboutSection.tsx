@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div className="col-xl-5 col-lg-6">
             <div className="bd-about__content-wrapper mb-60">
               <div className="bd-section__title-wrapper mb-35">
-                <span className="bd-sub__title">About Us</span>
+                <span className="bd-sub__title">Về Chúng Tôi</span>
                 <h2 className="bd-section__title mb-35">
                   Chúng tôi sẽ mang đến không gian xanh cho các bạn.
                 </h2>
@@ -44,7 +44,7 @@ const AboutSection = () => {
                 </div>
                 <div className="bd-about__action">
                   <Link className="bd-bn__btn-1" href="/about">
-                    About Us
+                    Về Chúng Tôi
                   </Link>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const AboutSection = () => {
               </div>
               <div className="bd-about__quite-box">
                 <div className="quite-content">
-                  <p>{`"Organic foods are very helpful to our human body"`}</p>
+                  <p>{`"Cây xanh tươi tốt mang lại không gian sống trong lành và tràn đầy sức sống cho bạn!"`}</p>
                 </div>
                 <div className="quite-icon">
                   <i className="flaticon-quote"></i>

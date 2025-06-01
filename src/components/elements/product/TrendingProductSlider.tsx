@@ -28,17 +28,17 @@ const TrendingProductSlider = ({ trending_product_title }: any) => {
   const menuData = [
     {
       id: 1,
-      text: "New Arrival",
+      text: "Sản phẩm mới",
       api: "new-arrival",
     },
     {
       id: 2,
-      text: "Best Sale",
+      text: "Ưu đãi tốt nhất",
       api: "best-selling-products",
     },
     {
       id: 3,
-      text: "Trending",
+      text: "Xu hướng",
       api: "trending-products",
     },
   ];
