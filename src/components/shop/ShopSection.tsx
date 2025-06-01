@@ -103,7 +103,7 @@ const ShopSection = () => {
 
     return (
         <>
-            <section className="bd-shop__area pt-115 pb-85">
+            <section className="bd-shop__area pt-20">
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-3 col-xl-4 col-lg-4">

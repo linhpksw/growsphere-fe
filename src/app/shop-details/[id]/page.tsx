@@ -1,21 +1,18 @@
-
-import ShopDetailsMain from "@/components/shop-details/ShopDetailsMain";
-import Wrapper from "@/layout/DefaultWrapper";
+import ShopDetailsMain from '@/components/shop-details/ShopDetailsMain';
+import Wrapper from '@/layout/DefaultWrapper';
 
 const ShoDetailsDynamic = ({ params }: { params: { id: number } }) => {
-    const id =  params.id
+    const id = params.id;
 
-   
     return (
         <>
             <Wrapper>
                 <main>
-                    
-                    <ShopDetailsMain id={id}/>
+                    <ShopDetailsMain id={id} />
                 </main>
             </Wrapper>
         </>
     );
-}
+};
 
-export default ShoDetailsDynamic
+export default ShoDetailsDynamic;
