@@ -12,6 +12,7 @@ const nav_menus_list:NavMenuItem[] = [
     hasDropdown: true,
     megamenu: false,
     dropdownItems: [
+      { link: '/shop', title: 'Cửa hàng' },
       { link: '/wishlist', title: 'Danh sách yêu thích' },
       { link: '/cart', title: 'Giỏ hàng' },
       { link: '/checkout', title: 'Thanh toán' },
@@ -24,7 +25,7 @@ const nav_menus_list:NavMenuItem[] = [
     hasDropdown: true,
     megamenu: false,
     dropdownItems: [
-      { link: '/about', title: 'About' },
+      { link: '/about', title: 'Về chúng tôi' },
       { link: '/team', title: 'Đội' },
       { link: '/register', title: 'Đăng ký' },
       { link: '/login', title: 'Đăng nhập' },

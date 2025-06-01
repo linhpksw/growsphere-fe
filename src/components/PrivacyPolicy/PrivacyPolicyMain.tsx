@@ -24,7 +24,7 @@ const PrivacyPolicyMain = () => {
                     aria-selected="false"
                   >
                     <i className="fas fa-circle"></i>
-                    <span>Policy & Privacy</span>
+                    <span>Chính sách & Bảo mật</span>
                   </button>
                 </li>
                 <li role="presentation">
@@ -36,7 +36,7 @@ const PrivacyPolicyMain = () => {
                     aria-selected="true"
                   >
                     <i className="fas fa-circle"></i>
-                    <span>Terms & Conditions</span>
+                    <span>Điều khoản & Điều kiện</span>
                   </button>
                 </li>
 
@@ -49,7 +49,7 @@ const PrivacyPolicyMain = () => {
                     aria-selected="true"
                   >
                     <i className="fas fa-circle"></i>
-                    <span> Refund Policy</span>
+                    <span> Chính sách hoàn tiền</span>
                   </button>
                 </li>
               </ul>

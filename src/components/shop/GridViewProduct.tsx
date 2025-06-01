@@ -156,7 +156,7 @@ const GridViewProduct = ({ products, limit }: any) => {
       ) : (
         <>
           {prodcutLoadding === false && (
-            <p className="text center">No Product</p>
+            <p className="text center">Không có sản phẩm</p>
           )}
         </>
       )}

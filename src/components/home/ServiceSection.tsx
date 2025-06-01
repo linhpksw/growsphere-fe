@@ -18,7 +18,7 @@ const ServiceSection = () => {
                   alt="title-img"
                 />
               </div>
-              <span className="bd-step__title">and pure products</span>
+              <span className="bd-step__title">và chất lượng</span>
             </div>
           </div>
         </div>

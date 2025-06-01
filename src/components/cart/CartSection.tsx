@@ -46,7 +46,7 @@ const CartSection = () => {
       {cartProducts.length === 0 && (
         <div className="container">
           <div className="empty-text pt-100 pb-100 text-center">
-            <h3>Your cart is empty</h3>
+            <h3>Giỏ hàng trống</h3>
           </div>
         </div>
       )}

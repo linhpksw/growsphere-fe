@@ -245,7 +245,7 @@ const ShopDetailsMain = ({ id }: any) => {
                       </div>
                       <div className="bd__social-media">
                         <ul>
-                          <li>Share:</li>
+                          <li>Chia sẻ:</li>
                           <li>
                             <Link
                               href="https://www.facebook.com/"

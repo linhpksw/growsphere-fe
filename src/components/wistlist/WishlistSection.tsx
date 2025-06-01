@@ -18,7 +18,7 @@ const WishlistSection = () => {
       <div className="container small-container">
         {wishlist.length === 0 && (
           <div className="text-center">
-            <h3>Your wishlist is empty</h3>
+            <h3>Danh sách yêu thích trống</h3>
           </div>
         )}
         {wishlist.length >= 1 ?

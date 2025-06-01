@@ -21,22 +21,22 @@ const FooterThree = () => {
                                     <div className="bd-footer__link">
                                         <ul>
                                             <li>
-                                                <Link href="/about">About Our Company</Link>
+                                                <Link href="/about">Về Website Của Chúng Tôi</Link>
                                             </li>
                                             <li>
-                                                <Link href="/shop">Latest Products</Link>
+                                                <Link href="/shop">Các Sản Phẩm Mới Nhất</Link>
                                             </li>
                                             <li>
-                                                <Link href="/checkout">Payment Type</Link>
+                                                <Link href="/checkout">Các Loại Thanh Toán</Link>
                                             </li>
                                             <li>
-                                                <Link href="/about">Awards Winnings</Link>
+                                                <Link href="/about">Các Giải Thưởng</Link>
                                             </li>
                                             <li>
-                                                <Link href="/about">World Media Partner</Link>
+                                                <Link href="/about">Các Đối Tác</Link>
                                             </li>
                                             <li>
-                                                <Link href="/shop">Flash Offers</Link>
+                                                <Link href="/shop">Khuyến Mãi</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -79,7 +79,7 @@ const FooterThree = () => {
                         <div className="col-12">
                             <div className="bd-footer__copyright text-center">
                                 <ul>
-                                    <li>All Rights Reserved</li>
+                                    <li>Bản quyền thuộc về chúng tôi</li>
                                     <li>
                                         Copyrighted by ©2023{' '}
                                         <span>

@@ -134,7 +134,7 @@ const SidebarWishlist = () => {
                 </>
               ) : (
                 <>
-                  <p className="text-center pt-20 text-capitalize">Your wishlist is empty</p>
+                  <p className="text-center pt-20 text-capitalize">Danh sách yêu thích trống</p>
                 </>
               )}
             </div>

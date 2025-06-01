@@ -24,7 +24,7 @@ const AboutSectionTwo = () => {
           <div className="col-xxl-7 col-xl-7 col-lg-6">
             <div className="bd-about__content-box mb-60">
               <div className="bd-section__title-wrapper mb-50">
-                <span className="bd-sub__title">About Us</span>
+                <span className="bd-sub__title">Về Chúng Tôi</span>
                 <h2 className="bd-section__title mb-30">
                   Chúng tôi sẽ mang đến không gian xanh cho các bạn.
                 </h2>
