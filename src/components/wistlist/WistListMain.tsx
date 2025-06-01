@@ -4,7 +4,7 @@ import WishlistSection from './WishlistSection';
 
 const WistListMain = () => {
     return (
-        <><Breadcrumb breadHome="Home" breadMenu="Wishlist"/>
+        <><Breadcrumb breadHome="Trang chủ" breadMenu="Danh sách yêu thích"/>
             <WishlistSection/>
         </>
     );

@@ -172,15 +172,9 @@ const ContactForm = () => {
                             <h4>Điện thoại</h4>
                           </div>
                           <span>
-                            Mobile :{" "}
+                            Điện thoại :{" "}
                             <a href="tel:(+88)872-670-780">
-                              <span>(+88) 872-670-780</span>
-                            </a>
-                          </span>
-                          <span>
-                            Mobile :{" "}
-                            <a href="tel:(+8)422-655-793">
-                              <span>(+8) 422-655 -793</span>
+                              <span>0964 721 763</span>
                             </a>
                           </span>
                         </div>
@@ -197,14 +191,9 @@ const ContactForm = () => {
                           </div>
                           <span>
                             <a href="mailto:Info@example.com">
-                              Info@example.com
+                              mnanh0126@gmail.com
                             </a>
-                          </span>
-                          <span>
-                            <a href="mailto:Info@example.com">
-                              Contact@example.com
-                            </a>
-                          </span>
+                          </span>                       
                         </div>
                       </div>
                     </div>

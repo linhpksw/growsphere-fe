@@ -83,7 +83,7 @@ const BlogSection = () => {
                       className="bd-news__btn"
                       href={`/blog-details/${item._id}`}
                     >
-                      Read More
+                      ĐỌC THÊM
                       <span>
                         <i className="fa-solid fa-arrow-left"></i>
                         <i className="fa-solid fa-arrow-left"></i>

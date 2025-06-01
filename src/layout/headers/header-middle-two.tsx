@@ -18,13 +18,11 @@ const HeaderMiddleTwo = () => {
                                 <div className="bd-treak__right">
                                     <div className="border-lefts">
                                         <select name="lan-select" id="lan-select" className="language-select">
-                                            <option defaultValue="1">Vietnamese</option>
-                                            <option defaultValue="2">English</option>                                   
+                                            <option defaultValue="1">English</option>
                                         </select>
                                     </div>
                                     <div className="border-left">
                                         <select name="currency-select" id="currency-select" className="currency-select border-left">
-                                            <option defaultValue="1">VNĐ</option>
                                             <option defaultValue="2">EUR</option>
                                             <option defaultValue="3">USD</option>
                                             <option defaultValue="4">GBP</option>

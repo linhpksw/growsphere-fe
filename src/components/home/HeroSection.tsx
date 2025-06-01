@@ -22,7 +22,7 @@ const HeroSection = () => {
                     <div className="col-xxl-7 col-xl-6 col-lg-6">
                         <div className="bd-banner__content-box mb-60">
                             <div className="bd-banner__text">
-                                <h2>VƯỜN RAU <br />SẠCH TẬN TAY</h2>
+                                <h2>NẢY MẦM </h2>
                             </div>
                             <div className="row">
                                 <div className="col-xxl-5">

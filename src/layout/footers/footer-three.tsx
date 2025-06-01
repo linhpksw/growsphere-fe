@@ -81,10 +81,9 @@ const FooterThree = () => {
                                 <ul>
                                     <li>Bản quyền thuộc về chúng tôi</li>
                                     <li>
-                                        Copyrighted by ©2023{' '}
+                                        GrowSphere{' '}
                                         <span>
                                             <Link href="https://themeforest.net/user/bdevs/portfolio">
-                                                BDevs
                                             </Link>
                                         </span>
                                     </li>

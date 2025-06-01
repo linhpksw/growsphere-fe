@@ -8,7 +8,7 @@ const Faq = () => {
     <>
       <Wrapper>
         <main>
-        <Breadcrumb breadHome="Home" breadMenu="Faq"/>
+        <Breadcrumb breadHome="Trang chủ" breadMenu="Faq"/>
           <FaqMain/>
         </main>
       </Wrapper>

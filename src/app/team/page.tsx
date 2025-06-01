@@ -8,7 +8,7 @@ const Team = () => {
     <>
       <Wrapper>
         <main>
-        <Breadcrumb breadHome="Home" breadMenu="Team"/>
+        <Breadcrumb breadHome="Trang chủ" breadMenu="Đội"/>
           <TeamMain/>
         </main>
       </Wrapper>

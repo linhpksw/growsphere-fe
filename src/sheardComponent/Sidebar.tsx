@@ -118,38 +118,12 @@ const Sidebar = () => {
                                             <li>Chia sẻ:</li>
                                             <li>
                                                 <Link
-                                                    href="https://www.facebook.com/"
+                                                    href="https://www.facebook.com/profile.php?id=61576362463755"
                                                     target="_blank"
                                                 >
                                                     <i className="fab fa-facebook-f"></i>
                                                 </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    href="https://twitter.com/?lang=en"
-                                                    title="Twitter"
-                                                >
-                                                    <i className="fab fa-twitter"></i>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    href="https://www.linkedin.com/"
-                                                    title="Linkedin"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fab fa-linkedin"></i>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    href="https://www.instagram.com/"
-                                                    target="_blank"
-                                                    title="Instagram"
-                                                >
-                                                    <i className="fab fa-instagram"></i>
-                                                </Link>
-                                            </li>
+                                            </li>                                           
                                         </ul>
                                     </div>
                                 </div>

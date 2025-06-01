@@ -59,7 +59,7 @@ const ShopSidebarCategories = () => {
   return (
     <>
       <div className="bd-filter__widget child-content-hidden">
-        <h4 className="bd-filter__widget-title drop-btn">Categories</h4>
+        <h4 className="bd-filter__widget-title drop-btn">Thể Loại</h4>
         <div className="bd-filter__content">
           <div onClick={handleViewAll} className="bd-singel__rating">
             <input
