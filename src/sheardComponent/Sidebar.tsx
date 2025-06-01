@@ -81,12 +81,13 @@ const Sidebar = () => {
                                                     <i className="fal fa-map-marker-alt"></i>
                                                 </div>
                                                 <div className="offcanvas__contact-text">
-                                                    <Link
+                                                    <a
+                                                        href="https://www.google.com/maps/place/FPT+University/@21.0127367,105.5235083,17z"
                                                         target="_blank"
-                                                        href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
+                                                        rel="noopener noreferrer"
                                                     >
                                                         FPT University, Hoà Lạc
-                                                    </Link>
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li className="d-flex align-items-center">
@@ -95,7 +96,7 @@ const Sidebar = () => {
                                                 </div>
                                                 <div className="offcanvas__contact-text">
                                                     <Link href="tel:+088889797697">
-                                                        +088889797697{' '}
+                                                        0964 721 763{' '}
                                                     </Link>
                                                 </div>
                                             </li>
@@ -106,7 +107,7 @@ const Sidebar = () => {
                                                 <div className="offcanvas__contact-text">
                                                     <Link href="tel:+012-345-6789">
                                                         <span className="mailto:support@mail.com">
-                                                            support@mail.com{' '}
+                                                            mnanh0126@gmail.com{' '}
                                                         </span>
                                                     </Link>
                                                 </div>
@@ -123,7 +124,7 @@ const Sidebar = () => {
                                                 >
                                                     <i className="fab fa-facebook-f"></i>
                                                 </Link>
-                                            </li>                                           
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
