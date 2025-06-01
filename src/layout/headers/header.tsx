@@ -61,13 +61,13 @@ const HeaderOne = () => {
                                                             className="logo-white"
                                                             src={whiteLogo}
                                                             alt="logo"
-                                                            width={159}
+                                                            width={240}
                                                         />
                                                         <Image
                                                             className="logo-black"
                                                             src={blackLogo}
                                                             alt="logo"
-                                                            width={159}
+                                                            width={240}
                                                         />
                                                     </Link>
                                                     <div className="bd-header__logo-bg">
