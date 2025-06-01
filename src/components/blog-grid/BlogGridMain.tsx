@@ -5,7 +5,7 @@ import BlogGridSection from './BlogGridSection';
 const BlogGridMain = () => {
     return (
         <>
-           <Breadcrumb breadHome={'Home'} breadMenu={'Blog Grid'} /> 
+           <Breadcrumb breadHome={'Trang chủ'} breadMenu={'Blog Grid'} /> 
            <BlogGridSection/>
         </>
     );

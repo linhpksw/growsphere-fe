@@ -9,7 +9,7 @@ const TeamDetailsPage = ({ params }: { params: { id: string } }) => {
         <>
             <Wrapper>
                 <main>
-                <Breadcrumb breadHome="Home" breadMenu="Team Details"/>
+                <Breadcrumb breadHome="Trang chủ" breadMenu="Chi tiết thông tin đội"/>
                     <TeamDetailsMain id={id}/>
                 </main>
             </Wrapper>

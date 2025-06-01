@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import footerLogo from '../../../public/assets/img/logo/horizontal-dark.svg';
 import support from '../../../public/assets/img/icon/support.png';
-import discover from '../../../public/assets/img/icon/discover.png';
-import masterCard from '../../../public/assets/img/icon/mastercard.png';
-import paypal from '../../../public/assets/img/icon/paypal.png';
+import discover from '../../../public/assets/img/icon/momo.png';
+import masterCard from '../../../public/assets/img/icon/napas.png';
+import paypal from '../../../public/assets/img/icon/vnpay.png';
 import visa from '../../../public/assets/img/icon/visa.png';
 import axios from 'axios';
 import { CategoryType } from '@/interFace/api-interFace';
@@ -40,7 +40,7 @@ const FooterOne = () => {
                                         <span>
                                             <Link href="mailto:Info@example.com">
                                                 <i className="fa-regular fa-envelope"></i>
-                                                Info@example.com{' '}
+                                                mnanh0126@gmail.com{' '}
                                             </Link>{' '}
                                         </span>
                                         <span>
@@ -123,9 +123,9 @@ const FooterOne = () => {
                                         <Image src={support} alt="support-img" />
                                     </div>
                                     <div className="bd-footer__support-inner">
-                                        <span>8:30 AM - 9:30 PM</span>
+                                        <span>8:30 Sáng - 9:30 Tối</span>
                                         <h4>
-                                            <Link href="tel:+58569502352">+585 695 023 52 </Link>{' '}
+                                            <Link href="tel:+58569502352">0964 721 763 </Link>{' '}
                                         </h4>
                                     </div>
                                 </div>
@@ -159,24 +159,19 @@ const FooterOne = () => {
                                     </li>
                                     <li>
                                         <Link href="#">
-                                            <Image src={discover} alt="discover" />{' '}
+                                            <Image src={discover} style={{  width: '35px', height: '35px', }} alt="discover" />{' '}
                                         </Link>{' '}
                                     </li>
                                     <li>
                                         <Link href="#">
-                                            <Image src={masterCard} alt="mastercard" />{' '}
+                                            <Image src={masterCard} style={{  width: '40px', height: '40px', }} alt="mastercard" />{' '}
                                         </Link>{' '}
                                     </li>
                                     <li>
                                         <Link href="#">
-                                            <Image src={paypal} alt="paypal" />{' '}
+                                            <Image src={paypal} style={{  width: '40px', height: '40px', }} alt="paypal" />{' '}
                                         </Link>{' '}
-                                    </li>
-                                    <li>
-                                        <Link href="#">
-                                            <Image src={visa} alt="visa" />{' '}
-                                        </Link>{' '}
-                                    </li>
+                                    </li>                                
                                 </ul>
                             </div>
                         </div>

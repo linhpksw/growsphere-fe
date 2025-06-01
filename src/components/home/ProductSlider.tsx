@@ -54,8 +54,8 @@ const ProductSlider = () => {
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-4">
                             <div className="bd-section__title-wrapper mb-60">
-                                <span className="bd-sub__title">Organic Products</span>
-                                <h2 className="bd-section__title mb-30">Featured Product</h2>
+                                <span className="bd-sub__title"></span>
+                                <h2 className="bd-section__title mb-30">Sản phẩm nổi bật</h2>
                             </div>
                         </div>
                         <div className="col-xl-7 col-lg-8">

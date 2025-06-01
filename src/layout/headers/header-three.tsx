@@ -220,7 +220,7 @@ const HeaderThree = () => {
                                                             <span></span>
                                                             <span></span>
                                                         </div>
-                                                        <span>All Categories</span>
+                                                        <span>Tất Cả Thể Loại</span>
                                                     </div>
                                                     <div
                                                         className={
@@ -270,9 +270,9 @@ const HeaderThree = () => {
                                                         <Image src={support} alt="support-icon" />
                                                     </div>
                                                     <div className="bd-support__text">
-                                                        <span>8:30 AM - 9:30 PM</span>
+                                                        <span>8:30 Sáng - 9:30 Tối</span>
                                                         <Link href="tel:878-185-287">
-                                                            (+2) 695 023 52
+                                                            0964 721 763
                                                         </Link>
                                                     </div>
                                                 </div>

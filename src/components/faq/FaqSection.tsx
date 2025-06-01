@@ -62,12 +62,10 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Phông chữ web thường gây ảnh hưởng xấu đến hiệu
-                                                    suất của trang web, và hầu hết các chiến lược
-                                                    tải phông hiện tại đều không thực sự hiệu quả
-                                                    trong việc khắc phục vấn đề đó. Tuy nhiên, những
-                                                    tùy chọn phông chữ sắp ra mắt có thể sẽ thực sự
-                                                    mang lại giải pháp như mong đợi.
+                                                    Chào mừng bạn đến với cửa hàng kit trồng cây của
+                                                    chúng tôi! Nếu bạn là người mới bắt đầu hành
+                                                    trình làm vườn, đừng lo — chúng tôi ở đây để
+                                                    giúp bạn từng bước.
                                                 </p>
                                             </div>
                                         </div>
@@ -93,12 +91,10 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Giao diện và thiết kế ngày nay đã trở nên vô
-                                                    cùng phức tạp. Vì vậy, chúng tôi mời những người
-                                                    thông minh và thân thiện từ cộng đồng cùng tham
-                                                    gia các buổi workshop trực tuyến để mọi người có
-                                                    thể học hỏi cùng nhau. Và hiện tại, chúng tôi đã
-                                                    có những buổi workshop mới.
+                                                    Chúng tôi luôn mong muốn bạn hài lòng với sản
+                                                    phẩm kit trồng cây của mình. Tuy nhiên, nếu có
+                                                    vấn đề xảy ra, bạn hoàn toàn có thể yêu cầu đổi
+                                                    trả hoặc hoàn tiền theo chính sách
                                                 </p>
                                             </div>
                                         </div>
@@ -124,12 +120,12 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Việc trồng cây tại nhà có thể trở nên khó khăn
-                                                    với người mới bắt đầu. Vì vậy, chúng tôi mời các
-                                                    chuyên gia thân thiện và giàu kinh nghiệm trong
-                                                    cộng đồng cùng chia sẻ kiến thức qua các buổi
-                                                    workshop trực tuyến. Và hiện tại, đã có những
-                                                    buổi học mới dành cho bạn!
+                                                    Chúng tôi cam kết bảo vệ tuyệt đối thông tin cá
+                                                    nhân của bạn. Khi mua kit trồng cây tại website
+                                                    của chúng tôi, mọi dữ liệu cá nhân như tên, địa
+                                                    chỉ, số điện thoại và thông tin thanh toán đều
+                                                    được xử lý an toàn và bảo mật theo tiêu chuẩn
+                                                    cao nhất.
                                                 </p>
                                             </div>
                                         </div>
@@ -155,13 +151,10 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Trồng cây tại nhà tưởng đơn giản nhưng lại đòi
-                                                    hỏi nhiều kiến thức và kỹ thuật. Vì vậy, chúng
-                                                    tôi thường xuyên mời những người yêu cây, giàu
-                                                    kinh nghiệm trong cộng đồng chia sẻ qua các buổi
-                                                    workshop trực tuyến. Hãy cùng nhau học hỏi và
-                                                    bắt đầu hành trình xanh! Hiện tại, đã có những
-                                                    buổi học mới dành cho bạn.
+                                                    Chúng tôi hiểu việc mã khuyến mãi không sử dụng
+                                                    được có thể gây khó chịu, nếu có vấn đề bạn hãy
+                                                    gọi ngay đến đường dây nóng để có thể được hỗ
+                                                    trợ sớm nhất nhé!
                                                 </p>
                                             </div>
                                         </div>
@@ -187,10 +180,9 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Có rất nhiều phiên bản nội dung khác nhau, nhưng
-                                                    hầu hết đã bị thay đổi, chèn thêm những từ ngẫu
-                                                    nhiên khiến nội dung trở nên không thật và khó
-                                                    tin.
+                                                    Bạn chỉ cần chọn sản phẩm, vào phần thanh toán,
+                                                    chọn phương thức thẻ tín dụng và nhập thông tin
+                                                    thẻ nhé
                                                 </p>
                                             </div>
                                         </div>
@@ -228,12 +220,10 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Phông chữ web thường gây ảnh hưởng tiêu cực đến
-                                                    hiệu suất trang web, và hầu hết các chiến lược
-                                                    tải phông hiện tại đều chưa thực sự hiệu quả để
-                                                    khắc phục vấn đề này. Tuy nhiên, các tùy chọn
-                                                    phông chữ sắp tới có thể sẽ mang lại giải pháp
-                                                    như kỳ vọng.
+                                                    Chúng tôi không chỉ bán kit trồng cây – chúng
+                                                    tôi mang đến cho bạn trải nghiệm làm vườn đơn
+                                                    giản, thú vị và hiệu quả, dù bạn là người mới
+                                                    bắt đầu hay đã có kinh nghiệm.
                                                 </p>
                                             </div>
                                         </div>
@@ -259,12 +249,10 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Giao diện và thiết kế website hiện nay khá phức
-                                                    tạp. Vì vậy, chúng tôi thường mời những người
-                                                    yêu cây, giàu kinh nghiệm từ cộng đồng tổ chức
-                                                    các buổi workshop trực tuyến để cùng nhau học
-                                                    hỏi. Và hiện tại, chúng tôi đã có những buổi
-                                                    workshop mới dành cho bạn!
+                                                    Mỗi kit trồng cây của chúng tôi đều được thiết
+                                                    kế để bạn có thể trồng thành công số lượng cây
+                                                    như cam kết, giúp bạn tận hưởng niềm vui làm
+                                                    vườn ngay tại nhà.
                                                 </p>
                                             </div>
                                         </div>
@@ -290,13 +278,13 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Ngày nay, việc thiết kế giao diện và trải nghiệm
-                                                    người dùng ngày càng phức tạp. Vì vậy, chúng tôi
-                                                    mời những người yêu cây, giàu kinh nghiệm từ
-                                                    cộng đồng tổ chức các buổi workshop trực tuyến
-                                                    để cùng nhau học hỏi và phát triển. Và hiện tại,
-                                                    chúng tôi đã có những buổi workshop mới dành cho
-                                                    bạn!
+                                                    Hiện tại, chúng tôi chuyên cung cấp các bộ kit
+                                                    trồng cây kèm hướng dẫn chi tiết để bạn có thể
+                                                    tự chăm sóc cây tại nhà một cách dễ dàng. Tuy
+                                                    chưa có dịch vụ bảo trì cây trực tiếp, nhưng bạn
+                                                    luôn được hỗ trợ tận tình qua các buổi workshop
+                                                    trực tuyến và cộng đồng yêu cây giàu kinh
+                                                    nghiệm.
                                                 </p>
                                             </div>
                                         </div>
@@ -322,13 +310,9 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Hiện nay, thiết kế giao diện và trải nghiệm
-                                                    người dùng ngày càng trở nên phức tạp. Vì vậy,
-                                                    chúng tôi mời các chuyên gia yêu cây và nhiệt
-                                                    huyết trong cộng đồng tổ chức các buổi workshop
-                                                    trực tuyến để mọi người cùng học hỏi và phát
-                                                    triển. Và hiện tại, chúng tôi đã có những buổi
-                                                    workshop mới dành cho bạn!
+                                                    Hãy đến cửa hàng của chúng tôi, bạn sẽ nhận được
+                                                    sự chăm sóc và tư vấn thật chu đáo từ nhân viên
+                                                    của chúng tôi nhé
                                                 </p>
                                             </div>
                                         </div>
@@ -343,7 +327,7 @@ const FaqSection = () => {
                                                 aria-expanded="false"
                                                 aria-controls="collapseEleven"
                                             >
-                                                Dịch vụ này giá bao nhiêu?
+                                                Làm thế nào để chăm sóc cây sau khi nhận kit?
                                             </button>
                                         </h2>
                                         <div
@@ -354,13 +338,13 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Ngày nay, thiết kế giao diện và trải nghiệm
-                                                    người dùng ngày càng phức tạp hơn. Vì vậy, chúng
-                                                    tôi thường xuyên mời những người yêu cây và có
-                                                    kinh nghiệm trong cộng đồng tổ chức các buổi
-                                                    workshop trực tuyến để cùng nhau học hỏi. Và
-                                                    hiện tại, chúng tôi đã có những buổi workshop
-                                                    mới dành cho bạn!
+                                                    Sau khi nhận được kit trồng cây, bạn chỉ cần làm
+                                                    theo hướng dẫn đính kèm trong hộp. Chúng tôi
+                                                    khuyên bạn nên đặt cây ở nơi có đủ ánh sáng,
+                                                    tưới nước đều đặn và theo dõi sự phát triển của
+                                                    cây mỗi ngày. Nếu có thắc mắc, bạn có thể tham
+                                                    gia các workshop trực tuyến hoặc liên hệ với đội
+                                                    ngũ hỗ trợ của chúng tôi để được giúp đỡ.
                                                 </p>
                                             </div>
                                         </div>
@@ -375,7 +359,7 @@ const FaqSection = () => {
                                                 aria-expanded="false"
                                                 aria-controls="collapseTwelve"
                                             >
-                                                Dịch vụ này giá bao nhiêu?
+                                                Có những loại cây nào trong các bộ kit của bạn?
                                             </button>
                                         </h2>
                                         <div
@@ -386,13 +370,12 @@ const FaqSection = () => {
                                         >
                                             <div className="accordion-body">
                                                 <p>
-                                                    Ngày nay, việc thiết kế giao diện và trải nghiệm
-                                                    người dùng ngày càng phức tạp. Vì vậy, chúng tôi
-                                                    thường xuyên mời những người yêu cây, giàu kinh
-                                                    nghiệm trong cộng đồng tổ chức các buổi workshop
-                                                    trực tuyến để cùng nhau học hỏi và phát triển.
-                                                    Và hiện tại, chúng tôi đã có những buổi workshop
-                                                    mới dành cho bạn!
+                                                    Chúng tôi cung cấp nhiều loại kit với các hạt
+                                                    giống đa dạng, từ rau thơm, cây cảnh nhỏ đến hoa
+                                                    và cây thảo dược. Mỗi bộ kit được thiết kế riêng
+                                                    phù hợp với nhu cầu và không gian của bạn, giúp
+                                                    bạn dễ dàng chọn lựa và bắt đầu hành trình trồng
+                                                    cây ngay tại nhà.
                                                 </p>
                                             </div>
                                         </div>

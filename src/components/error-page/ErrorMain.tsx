@@ -17,7 +17,7 @@ const ErrorMain = () => {
                   <p>Sorry mate … Something is Wrong</p>
                 </div>
                 <Link className="bd-error__btn" href="/">
-                  Back to Home
+                  Quay về Trang chủ
                 </Link>
               </div>
             </div>

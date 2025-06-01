@@ -7,7 +7,7 @@ const ContactMain = () => {
   return (
     <>
       {" "}
-      <Breadcrumb breadHome="Home" breadMenu="Contact" />
+      <Breadcrumb breadHome="Trang chủ" breadMenu="Liên lạc" />
       <ContactForm />
       <ContactMap />
     </>
