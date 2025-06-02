@@ -81,8 +81,8 @@ const CheckOutMain = () => {
                         {user?.email ? (
                             <h3>
                                 {' '}
-                                Hi, {user?.name}{' '}
-                                <span id="showlogin"> Wellcome To GrowSphere </span>
+                                Rất vui được gặp bạn {user?.name}{' '},
+                                <span id="showlogin"> chào mừng đến với GrowSphere </span>
                             </h3>
                         ) : (
                             <h3>

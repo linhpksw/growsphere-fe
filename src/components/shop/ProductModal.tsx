@@ -12,9 +12,9 @@ import { cart_product, decrease_quantity } from "@/redux/slices/cartSlice";
 import { wishlist_product } from "@/redux/slices/wishlistSlice";
 import { CartProductType } from "@/interFace/interFace";
 import axios from "axios";
-import discover from "../../../public/assets/img/icon/discover.png";
-import masterCard from "../../../public/assets/img/icon/mastercard.png";
-import papyle from "../../../public/assets/img/icon/paypal.png";
+import discover from "../../../public/assets/img/icon/momo.png";
+import masterCard from "../../../public/assets/img/icon/napas.png";
+import papyle from "../../../public/assets/img/icon/vnpay.png";
 import visa from "../../../public/assets/img/icon/visa.png";
 import GetRatting from "@/hooks/GetRatting";
 import { useSelector } from "react-redux";
@@ -211,12 +211,11 @@ const ProductModal = () => {
                         <div className="modal-product-meta bd__product-details-menu-1">
                           <ul>
                             <li>
-                              <strong>Products:</strong>
+                              <strong>Sản Phẩm:</strong>
                               <span>
-                                <Link href="/shop">Vegetable</Link>
-                                <Link href="/shop">Fruits</Link>
-                                <Link href="/shop">Dairy Milk</Link>
-                                <Link href="/shop">Bakery</Link>
+                                <Link href="/shop">Cây</Link>
+                                <Link href="/shop">Chậu</Link>
+                                <Link href="/shop">Hạt</Link>
                               </span>
                             </li>
                           </ul>
@@ -249,8 +248,7 @@ const ProductModal = () => {
                               className="cart-btn bd-fill__btn"
                               href="/cart"
                             >
-                              <i className="fal fa-cart-arrow-down"></i> View
-                              Cart
+                              <i className="fal fa-cart-arrow-down"></i> Xem Giỏ Hàng
                             </Link>
                           </span>
                         </div>
@@ -265,7 +263,7 @@ const ProductModal = () => {
                                 }
                               >
                                 <i className="far fa-heart"></i>
-                                <span>Add to Wishlist</span>
+                                <span>Thêm Vào Danh Sách Yêu Thích</span>
                               </span>
                             </li>
                             <li>
@@ -293,19 +291,16 @@ const ProductModal = () => {
                           </ul>
                         </div>
                         <div className="bd__safe-checkout">
-                          <h5>Guaranteed Safe Checkout</h5>
+                          <h5>Thanh toán an toàn được đảm bảo</h5>
                           <a href="#">
-                            <Image src={discover} alt="Payment Image" />
+                            <Image src={discover} style={{ width: '35px', height: '35px' }} alt="Payment Image" />
                           </a>
                           <a href="#">
-                            <Image src={masterCard} alt="Payment Image" />
+                            <Image src={masterCard} style={{ width: '45px', height: '45px' }} alt="Payment Image" />
                           </a>
                           <a href="#">
-                            <Image src={papyle} alt="Payment Image" />
-                          </a>
-                          <a href="#">
-                            <Image src={visa} alt="Payment Image" />
-                          </a>
+                            <Image src={papyle} style={{ width: '40px', height: '40px' }} alt="Payment Image" />
+                          </a>                    
                         </div>
                       </div>
                     </div>

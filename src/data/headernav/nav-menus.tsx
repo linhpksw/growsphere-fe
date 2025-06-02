@@ -25,11 +25,9 @@ const nav_menus_list:NavMenuItem[] = [
     hasDropdown: true,
     megamenu: false,
     dropdownItems: [
-      { link: '/about', title: 'Về chúng tôi' },
-      { link: '/team', title: 'Đội' },
-      { link: '/register', title: 'Đăng ký' },
-      { link: '/login', title: 'Đăng nhập' },
-      { link: '/faq', title: 'FAQ' },
+      { link: '/about', title: 'Về "Nảy Mầm"' },
+      { link: '/team', title: 'Về Chúng Tôi' },
+      { link: '/faq', title: 'Câu Hỏi Thường Gặp' },
       { link: '/privacy-policy', title: 'Chính sách bảo mật' },
       
     ]
@@ -40,7 +38,7 @@ const nav_menus_list:NavMenuItem[] = [
   },
   {id:5,
     link: '/contact',
-    title: 'Liên lạc',
+    title: 'Liên hệ',
   },
 ]
 

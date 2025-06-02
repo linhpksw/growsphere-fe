@@ -108,7 +108,7 @@ const HeaderOne = () => {
                                                                     <form action="#">
                                                                         <input
                                                                             type="text"
-                                                                            placeholder="Search here..."
+                                                                            placeholder="Tìm kiếm ở đây..."
                                                                         />
                                                                         <button type="submit">
                                                                             <i className="fal fa-search"></i>

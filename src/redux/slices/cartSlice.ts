@@ -35,7 +35,7 @@ export const cartSlice = createSlice({
                 state.cartProducts.push(tempProduct);
                 const capitalizedproductNameName =
                     payload.productName.charAt(0).toUpperCase() + payload.productName.slice(1);
-                toast.success(`${capitalizedproductNameName} added to cart`);
+                toast.success(`${capitalizedproductNameName} đã được thêm vào giỏ hàng`);
             }
         },
         remove_cart_product: (state, { payload }: PayloadAction<CartProductType>) => {

@@ -25,7 +25,7 @@ const ProfileSidebar = () => {
               aria-selected="true"
             >
               <i className="fas fa-tachometer-alt-fast"></i>
-              Dashboard
+              Số liệu
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -39,7 +39,7 @@ const ProfileSidebar = () => {
               aria-controls="profile"
               aria-selected="false"
             >
-              <i className="fas fa-user"></i> My Profile
+              <i className="fas fa-user"></i> Hồ Sơ Của Tôi
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -53,7 +53,7 @@ const ProfileSidebar = () => {
               aria-controls="history"
               aria-selected="false"
             >
-              <i className="fas fa-cart-plus"></i> Order Products
+              <i className="fas fa-cart-plus"></i> Sản Phẩm Đặt Hàng
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -67,7 +67,7 @@ const ProfileSidebar = () => {
               aria-controls="wishlist"
               aria-selected="false"
             >
-              <i className="fa-solid fa-money-check"></i> Payment History
+              <i className="fa-solid fa-money-check"></i> Lịch Sử Thanh Toán
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -81,7 +81,7 @@ const ProfileSidebar = () => {
               aria-controls="reviews"
               aria-selected="false"
             >
-              <i className="fas fa-star"></i> Reviews
+              <i className="fas fa-star"></i> Đánh Giá
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -95,7 +95,7 @@ const ProfileSidebar = () => {
               aria-controls="comments"
               aria-selected="false"
             >
-              <i className="fa-solid fa-comment"></i> My Comments
+              <i className="fa-solid fa-comment"></i> Bình Luận
             </button>
           </li>
 
@@ -110,7 +110,7 @@ const ProfileSidebar = () => {
               aria-controls="setting"
               aria-selected="false"
             >
-              <i className="fas fa-cog"></i> Settings
+              <i className="fas fa-cog"></i> Cài Đặt
             </button>
           </li>
           {user?.role === "admin" && (
@@ -120,7 +120,7 @@ const ProfileSidebar = () => {
                 className="nav-link"
                 
               >
-                <i className="fa-solid fa-lock"></i> Admin Pannel
+                <i className="fa-solid fa-lock"></i> Bảng Điều Khiển Quản Trị
               </button>
             </li>
           )}
@@ -137,7 +137,7 @@ const ProfileSidebar = () => {
               aria-controls="logout"
               aria-selected="false"
             >
-              <i className="fas fa-sign-out-alt"></i> Logout
+              <i className="fas fa-sign-out-alt"></i> Đăng xuất
             </button>
           </li>
         </ul>

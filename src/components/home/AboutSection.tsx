@@ -74,7 +74,7 @@ const AboutSection = () => {
                   <i className="flaticon-quote"></i>
                 </div>
                 <div className="bd-about__quite-name">
-                  <span>Daniel Nirob</span>
+                  <span>Ngọc Ánh</span>
                 </div>
               </div>
               <div className="bd-about__shape-1">
