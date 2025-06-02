@@ -20,7 +20,7 @@ const BlogDetailsMain = ({id}:idType) => {
       }, [id,setBlog]);
     return (
         <>
-            <Breadcrumb breadHome={'Trang chủ'} breadMenu={'Chi tiết thông tin Blog'} />
+            <Breadcrumb breadHome={'Trang chủ'} breadMenu={'Chi tiết thông tin bài viết'} />
             <BlogDetailsArea/>
         </>
     );

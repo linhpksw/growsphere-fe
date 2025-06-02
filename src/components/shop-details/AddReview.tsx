@@ -75,23 +75,23 @@ const AddReview = ({ product, setnewReview, newReview }: any) => {
     axios
       .post(`${process.env.BASE_URL}user-input/add-review?email=${user?.email}`, reviewInfoWithUser, header)
       .then((res) => {
-        if (res.data.message === "success") {
-          toast.success(`Review Added`);
+        if (res.data.message === "Thành Công") {
+          toast.success(`Đánh Giá Đã Được Thêm`);
           reset();
           setnewReview(!newReview);
           setRetting(0);
         }
         if (res.data.message === "custom error") {
-          toast.error(`Something Is Wrong`);
+          toast.error(`Có Gì Đó Sai`);
         }
       })
       .catch((error)=>{
         if (error.response.status === 403) {
           console.error(
-            "Unauthorized access"
+            "Không có quyền truy cập"
           );
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       })
   };
@@ -102,10 +102,10 @@ const AddReview = ({ product, setnewReview, newReview }: any) => {
         {reviewAccess && reviewAccess?._id === product?._id ? (
           <>
             <div className="comment-title mb-20">
-              <h3>Add review & rating</h3>
+              <h3>Viết đánh giá & chấm điểm</h3>
             </div>
             <div className="comment-rating mb-20">
-              <span>give ratings</span>
+              <span>Đánh Giá</span>
               <ul>
                 {retting === 0 ? (
                   <>
@@ -133,10 +133,10 @@ const AddReview = ({ product, setnewReview, newReview }: any) => {
                 <div className="row">
                   <div className="col-xxl-12">
                     <textarea
-                      placeholder="Your review"
+                      placeholder="Đánh giá của bạn"
                       className="comment-input comment-textarea mb-20"
                       {...register("review", {
-                        required: "Review is required",
+                        required: "Đánh giá bắt buộc",
                       })}
                     />
 
@@ -146,7 +146,7 @@ const AddReview = ({ product, setnewReview, newReview }: any) => {
                   <div className="col-xxl-12">
                     <div className="comment-submit">
                       <button type="submit" className="bd-fill__btn">
-                        Submit
+                        Gửi
                       </button>
                     </div>
                   </div>

@@ -18,7 +18,7 @@ const DashboardCounter = () => {
             <div className="counter-icon-wrap">{/* incon will be here */}</div>
             <div className="count-number">
             <CountUpContent number={myproducts?.length} text="" />
-              <p> My purches </p>
+              <p> Các Đơn Hàng Đã Mua </p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const DashboardCounter = () => {
               <span className="counter">
                 <CountUpContent number={cartQuantity} text="" />
               </span>
-              <p> My Cart </p>
+              <p> Giỏ Hàng </p>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const DashboardCounter = () => {
               <span className="counter">
                 <CountUpContent number={WishlistQuantity} text="" />
               </span>
-              <p> My Wishlist </p>
+              <p> Danh Sách Yêu Thích </p>
             </div>
           </div>
         </div>

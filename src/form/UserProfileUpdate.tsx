@@ -49,17 +49,17 @@ const UserProfileUpdate = () => {
         header
       )
       .then((res) => {
-        if (res.data.message === "success") {
+        if (res.data.message === "Thành Công") {
           setUpdate(true)
           router.push("/profile");
-          toast.success(`profile Updated`);
+          toast.success(`Hồ sơ đã được cập nhật`);
         }
       })
       .catch((error) => {
         if (error.response.status === 403) {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       });
   };
@@ -72,11 +72,11 @@ const UserProfileUpdate = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="contact-from-input mb-20">
-              <label htmlFor="FirstName">First Name</label>
+              <label htmlFor="FirstName">Họ</label>
               <input
                 id="FirstName"
                 type="text"
-                placeholder="First Name"
+                placeholder="Tên"
                 {...register("firstName")}
                 defaultValue={parts?.length ? parts[0] : ""}
               />
@@ -84,11 +84,11 @@ const UserProfileUpdate = () => {
           </div>
           <div className="col-md-6">
             <div className="contact-from-input mb-20">
-              <label htmlFor="LastName">Last Name</label>
+              <label htmlFor="LastName">Tên</label>
               <input
                 id="LastName"
                 type="text"
-                placeholder="Last Name"
+                placeholder="Tên"
                 {...register("lastName")}
                 defaultValue={parts?.length ? parts[1] : ""}
               />
@@ -109,11 +109,11 @@ const UserProfileUpdate = () => {
           </div>
           <div className="col-md-6">
             <div className="contact-from-input mb-20">
-              <label htmlFor="Phone">Phone </label>
+              <label htmlFor="Phone">Điện thoại </label>
               <input
                 id="Phone"
                 type="text"
-                placeholder="Phone"
+                placeholder="Điện thoại"
                 {...register("phone")}
                 defaultValue={user?.phone}
               />
@@ -129,7 +129,7 @@ const UserProfileUpdate = () => {
                 onChange={selectHandler}
                 name=""
                 setapiEndPoint={setGender}
-                className="gender-select"
+                className="Lựa chọn giới tính"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ const UserProfileUpdate = () => {
           <div className="col-sm-12">
             <div className="cont-btn mb-20  mt-10">
               <button type="submit" className="bd-bn__btn-1">
-                Update Profile
+                Cập Nhật Hồ Sơ
               </button>
             </div>
           </div>
