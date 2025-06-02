@@ -49,7 +49,7 @@ const AboutSectionTwo = () => {
                                         </div>
                                         <div className="bd-about__author-info">
                                             <h4>Noyaviram</h4>
-                                            <span>Nhà Sáng Lập Cute Của "Nảy Mầm"</span>
+                                            <span>Nhà Sáng Lập Cute Của Nảy Mầm</span>
                                             <div className="ba-author__signature">
                                                 <Image src={authorSigneture} alt="about-image" />
                                             </div>
