@@ -51,16 +51,16 @@ const BlogCommentForm = ({ item }: blogDataInterFace) => {
         if (res.data.data.acknowledged === true) {
           reset();
           setNewComment(!newComment);
-          toast.success(`comment added`, {
+          toast.success(`Bình luận đã được thêm`, {
             position: "top-left",
           });
         }
       })
       .catch((error) => {
         if (error.response.status === 403) {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       });
   };
@@ -75,10 +75,10 @@ const BlogCommentForm = ({ item }: blogDataInterFace) => {
               <textarea
                 placeholder="Nhập bình luận của bạn ..."
                 {...register("comment", {
-                  required: "Password is required",
+                  required: "Mật khẩu bắt buộc",
                   minLength: {
                     value: 4,
-                    message: "comment must be at least 4 characters long",
+                    message: "Bình luận phải có ít nhất 4 ký tự",
                   },
                 })}
               ></textarea>

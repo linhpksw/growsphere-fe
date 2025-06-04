@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import bgImg from "../../../../public/assets/img/user-bg/course-slider.png";
+import bgImg from "../../../../public/assets/img/banner/banner-1-i.jpg";
 import thumb from "../../../../public/assets/img/icon/user-icon.png";
 import Image from "next/image";
 import RestPasswordForm from "@/form/RestPasswordForm";
@@ -57,18 +57,18 @@ const UpdateProfile = () => {
         header
       )
       .then((res) => {
-        if (res.data.message === "success") {
+        if (res.data.message === "Thành Công") {
           setupload(false);
            setUpdate(true)
 
-          toast.success(`profile Picture Updated`);
+          toast.success(`Ảnh Hồ Sơ Đã Được Cập Nhật`);
         }
       })
       .catch((error) => {
         if (error.response.status === 403) {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       });
   };
@@ -88,7 +88,7 @@ const UpdateProfile = () => {
               aria-controls="profileA"
               aria-selected="true"
             >
-              Profile
+              Hồ Sơ
             </button>
           </li>
           <li className="nav-item" role="presentation">
@@ -102,7 +102,7 @@ const UpdateProfile = () => {
               aria-controls="password"
               aria-selected="false"
             >
-              Password
+              Mật Khẩu
             </button>
           </li>
         </ul>
@@ -183,7 +183,7 @@ const UpdateProfile = () => {
                         type="submit"
                         className="update-close-btn ml-20"
                       >
-                        Update Picture
+                        Cập Nhật Ảnh
                       </button>
                     </div>
                   )}

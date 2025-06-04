@@ -5,17 +5,17 @@ const BlogSidebarCategory = () => {
     return (
         <div className="sidebar__widget mb-30">
             <div className="sidebar__widget-head mb-35">
-                <h4 className="sidebar__widget-title">Category</h4>
+                <h4 className="sidebar__widget-title">Thể loại</h4>
             </div>
             <div className="sidebar__widget-content">
                 <div className="sidebar__category">
                     <ul>
-                        <li><Link href="/blog">Fruit and vegetables</Link></li>
-                        <li><Link href="/blog">Starchy food</Link></li>
-                        <li><Link href="/blog">Protein</Link></li>
-                        <li><Link href="/blog">Health & wellbeing</Link></li>
-                        <li><Link href="/blog">Eat Well, Your Way</Link></li>
-                        <li><Link href="/blog">Fresh vegetables</Link></li>
+                        <li><Link href="/blog">Cây xanh</Link></li>
+                        <li><Link href="/blog">Trồng trọt</Link></li>
+                        <li><Link href="/blog">Cách chăm sóc cây</Link></li>
+                        <li><Link href="/blog">Sức khoẻ & cách sống xanh</Link></li>
+                        <li><Link href="/blog">Không gian xanh</Link></li>
+                        <li><Link href="/blog">Nảy mầm</Link></li>
                     </ul>
                 </div>
             </div>

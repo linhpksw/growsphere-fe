@@ -25,7 +25,7 @@ const BlogSidebarBlogs = () => {
   return (
     <div className="sidebar__widget mb-30">
       <div className="sidebar__widget-head mb-35">
-        <h4 className="sidebar__widget-title">Recent posts</h4>
+        <h4 className="sidebar__widget-title">Bài viết gần đây</h4>
       </div>
       <div className="sidebar__widget-content">
         {blogs && (

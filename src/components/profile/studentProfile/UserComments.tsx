@@ -46,18 +46,18 @@ const UserComments = () => {
           ...header,
           data: item,
         });
-        if (response.data.message === "success") {
+        if (response.data.message === "Thành Công") {
           const remainingReviews = myComments.filter(
             (itm) => itm._id !== item?._id
           );
           setMyComments(remainingReviews);
-          toast.success("Comment Deleted");
+          toast.success("Bình Luận Đã Bị Xoá");
         }
       } catch (error: any) {
         if (error.response.status === 403) {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       }
     };
@@ -90,18 +90,18 @@ const UserComments = () => {
         header
       )
       .then((res) => {
-        if (res.data.message === "success") {
+        if (res.data.message === "Thành Công") {
           setEdeteActive(!edeteActive);
 
           setupdateComment(!updateComment);
-          toast.success(`Review Updated`);
+          toast.success(`Đánh Giá Đã Được Cập Nhật`);
         }
       })
       .catch((error) => {
         if (error.response.status === 403) {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       });
   };
@@ -116,7 +116,7 @@ const UserComments = () => {
                 <h5>
                   {" "}
                   <Link href={`/blog-details/${item?.postId}`}>
-                    {item?.title ? item?.title : "Blog Name Not Set"}
+                    {item?.title ? item?.title : "Tên bài viết Chưa Được Đặt"}
                   </Link>{" "}
                 </h5>
               </div>
@@ -136,20 +136,20 @@ const UserComments = () => {
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-edit"></i> Edit
+                          <i className="far fa-edit"></i> Cập Nhật
                         </button>
                         <button
                           onClick={() => handleDeleteReview(item)}
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-trash-alt"></i> Delete
+                          <i className="far fa-trash-alt"></i> Xoá
                         </button>
                       </div>
                     </div>
 
                     <div className="contact-from-input mb-20">
-                      <label htmlFor="Current">Update Comment</label>
+                      <label htmlFor="Current">Cập Nhật Bình Luận</label>
                       <input
                         id="Current"
                         type="text"
@@ -162,7 +162,7 @@ const UserComments = () => {
                       <div>
                         <div className="cont-btn mb-20  mt-10">
                           <button type="submit" className="update-close-btn">
-                            Update comment
+                            Cập Nhật Bình Luận
                           </button>
                         </div>
                       </div>
@@ -192,14 +192,14 @@ const UserComments = () => {
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-edit"></i> Edit
+                          <i className="far fa-edit"></i> Cập Nhật
                         </button>
                         <button
                           onClick={() => handleDeleteReview(item)}
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-trash-alt"></i> Delete
+                          <i className="far fa-trash-alt"></i> Xoá
                         </button>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ const UserComments = () => {
         </div>
       ) : (
         <>
-          <p className="text-center">No comments </p>
+          <p className="text-center">Không Có Bình Luận Nào </p>
         </>
       )}
     </>

@@ -51,7 +51,7 @@ const ShopDetailsMain = ({ id }: any) => {
     const totalCart = quantity?.totalCard;
     return (
         <>
-            <Breadcrumb breadHome={'Trang chủ'} breadMenu={'Chi tiết cửa hàng'} />
+            <Breadcrumb breadHome={'Trang chủ'} breadMenu={'Chi tiết sản phẩm'} />
 
             <div className="bd__shop-details-area pt-115 pb-75">
                 <div className="container small-container">

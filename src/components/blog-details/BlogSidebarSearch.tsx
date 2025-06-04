@@ -26,7 +26,7 @@ const BlogSidebarSearch = () => {
         <input
           value={searchValue}
           type="text"
-          placeholder="Search for blogs..."
+          placeholder="Tìm kiếm bài viết..."
           onChange={(e) => setSearchValue(e.target.value)}
         />
         <button type="submit">

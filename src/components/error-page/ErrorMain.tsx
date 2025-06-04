@@ -13,8 +13,8 @@ const ErrorMain = () => {
                   <h2>404</h2>
                 </div>
                 <div className="bd-error__text">
-                  <h3>Opps! Page Not found</h3>
-                  <p>Sorry mate … Something is Wrong</p>
+                  <h3>Opps! Không Tìm Thấy Trang</h3>
+                  <p>Xin lỗi bạn nhé... Có gì đó không ổn rồi.</p>
                 </div>
                 <Link className="bd-error__btn" href="/">
                   Quay về Trang chủ

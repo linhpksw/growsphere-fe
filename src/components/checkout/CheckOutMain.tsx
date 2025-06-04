@@ -55,9 +55,9 @@ const CheckOutMain = () => {
                 })
                 .catch((error) => {
                     if (error.response.status === 403) {
-                        console.error('Unauthorized access');
+                        console.error('Không có quyền truy cập');
                     } else {
-                        console.error('Unauthorized access');
+                        console.error('Không có quyền truy cập');
                     }
                 });
         }

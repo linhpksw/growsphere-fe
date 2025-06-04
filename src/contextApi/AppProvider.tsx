@@ -84,7 +84,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
     } else {
       setLoading(false);
     }
-  }, [token, loggedIn,update]);
+  }, [token, loggedIn,update, header]);
 
   useEffect(() => {
     if (user?.email) {

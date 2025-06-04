@@ -34,7 +34,7 @@ const nav_menus_list:NavMenuItem[] = [
   },
   {id:4,
     link: '/blog',
-    title: 'Blog',
+    title: 'Bài viết',
   },
   {id:5,
     link: '/contact',

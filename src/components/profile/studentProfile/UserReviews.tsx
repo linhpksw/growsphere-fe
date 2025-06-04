@@ -66,20 +66,20 @@ const UserReviews = () => {
           ...header,
           data: item,
         });
-        if (response.data.message === "success") {
+        if (response.data.message === "Thành Công") {
           const remainingReviews = myReviews.filter(
             (itm) => itm._id !== item?._id
           );
           setMyReviews(remainingReviews);
-          toast.success("Review Deleted");
+          toast.success("Đánh Giá Đã Bị Xoá");
         }
       } catch (error: any) {
         if (error.response.status === 403) {
           console.error(
-            "Unauthorized access"
+            "Không có quyền truy cập"
           );
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       }
     };
@@ -123,10 +123,10 @@ const UserReviews = () => {
      .catch((error)=>{
         if (error.response.status === 403) {
           console.error(
-            "Unauthorized access"
+            "Không có quyền truy cập"
           );
         } else {
-          console.error("Unauthorized access");
+          console.error("Không có quyền truy cập");
         }
       })
   };
@@ -183,7 +183,7 @@ const UserReviews = () => {
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-edit"></i> Edit
+                          <i className="far fa-edit"></i> Cập Nhật
                         </button>
                         <button
                           onClick={() => handleDeleteReview(item)}
@@ -196,7 +196,7 @@ const UserReviews = () => {
                     </div>
 
                     <div className="contact-from-input mb-20">
-                      <label htmlFor="Current">Change Review</label>
+                      <label htmlFor="Current">Thay Đổi Đánh Giá</label>
                       <input
                         id="Current"
                         type="text"
@@ -209,7 +209,7 @@ const UserReviews = () => {
                       <div>
                         <div className="cont-btn mb-20  mt-10">
                           <button type="submit" className="update-close-btn">
-                            Update Review
+                            Cập Nhật Đánh Giá
                           </button>
                         </div>
                       </div>
@@ -239,14 +239,14 @@ const UserReviews = () => {
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-edit"></i> Edit
+                          <i className="far fa-edit"></i> Cập Nhật
                         </button>
                         <button
                           onClick={() => handleDeleteReview(item)}
                           type="button"
                           className="student-profile-review-update-btn"
                         >
-                          <i className="far fa-trash-alt"></i> Delete
+                          <i className="far fa-trash-alt"></i> Xoá
                         </button>
                       </div>
                     </div>
@@ -261,7 +261,7 @@ const UserReviews = () => {
         </div>
       ) : (
         <>
-          <p className="text-center">No Reviews </p>
+          <p className="text-center">Không Có Đánh Giá </p>
         </>
       )}
     </>
