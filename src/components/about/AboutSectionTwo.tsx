@@ -45,11 +45,17 @@ const AboutSectionTwo = () => {
                                     </p>
                                     <div className="bd-about__author">
                                         <div className="bd-about__author-thumb">
-                                            <Image src={authorImg} style={{ width: '130px', height: '130px' }} alt="about-image" />
+                                            <Image
+                                                src={authorImg}
+                                                style={{ width: '130px', height: '130px' }}
+                                                alt="about-image"
+                                            />
                                         </div>
                                         <div className="bd-about__author-info">
                                             <h4>Noyaviram</h4>
+
                                             <span>Nhà Sáng Lập Cute Của Nảy Mầm</span>
+
                                             <div className="ba-author__signature">
                                                 <Image src={authorSigneture} alt="about-image" />
                                             </div>
