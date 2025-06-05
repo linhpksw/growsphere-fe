@@ -187,9 +187,9 @@ const CheckOutMain = () => {
             const API_KEY = 'd989661c-a00f-4408-bfd6-e4d508db41b0';
 
             const qrBody = {
-                accountNo: '105870477482',
+                accountNo: 'V3CASSNAYMAM',
                 accountName: 'CONG TY TNHH NAY MAM',
-                acqId: '970415',
+                acqId: '970418',
                 amount: totalPrice.toString(), // “250000”
                 addInfo: code, // “483912”
                 template: 'UWBYaB6',
