@@ -410,7 +410,12 @@ const CheckOutMain = () => {
                                                         </td>
                                                         <td className="product-total">
                                                             <span className="amount">
-                                                                ${item?.totalCard * item.price}
+                                                                {new Intl.NumberFormat('vi-VN', {
+                                                                    style: 'currency',
+                                                                    currency: 'VND',
+                                                                }).format(
+                                                                    item?.totalCard * item.price
+                                                                )}
                                                             </span>
                                                         </td>
                                                     </tr>
@@ -421,7 +426,10 @@ const CheckOutMain = () => {
                                                     <th>Tổng tiền giỏ hàng</th>
                                                     <td>
                                                         <span className="amount">
-                                                            ${totalPrice}
+                                                            {new Intl.NumberFormat('vi-VN', {
+                                                                style: 'currency',
+                                                                currency: 'VND',
+                                                            }).format(totalPrice)}
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -430,7 +438,10 @@ const CheckOutMain = () => {
                                                     <td>
                                                         <strong>
                                                             <span className="amount">
-                                                                ${totalPrice}
+                                                                {new Intl.NumberFormat('vi-VN', {
+                                                                    style: 'currency',
+                                                                    currency: 'VND',
+                                                                }).format(totalPrice)}
                                                             </span>
                                                         </strong>
                                                     </td>
