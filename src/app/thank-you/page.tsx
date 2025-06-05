@@ -1,17 +1,17 @@
-//@refresh
-
-import HomeMain from '@/components/home/HomeMain';
+'use client';
+import ThankYouMain from '@/components/thank-you/ThankYouMain';
 import Wrapper from '@/layout/DefaultWrapper';
-const Home = () => {
+
+const ThankYou = () => {
     return (
         <>
             <Wrapper>
                 <main>
-                    <HomeMain />
+                    <ThankYouMain />
                 </main>
             </Wrapper>
         </>
     );
 };
 
-export default Home;
+export default ThankYou;

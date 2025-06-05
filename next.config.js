@@ -1,6 +1,14 @@
 module.exports = {
     images: {
-        domains: ['i.ibb.co', 'images.unsplash.com', 'plus.unsplash.com'],
+        // wildcard: accept any https-hostname and any path
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+                port: '',
+                pathname: '/**',
+            },
+        ],
     },
 
     env: {

@@ -178,8 +178,8 @@ const ShopDetailsMain = ({ id }: any) => {
                                                             ({' '}
                                                             {`${retting.rettings} ${
                                                                 retting.rettings <= 1
-                                                                    ? 'Rating'
-                                                                    : 'Ratings'
+                                                                    ? 'Đánh giá'
+                                                                    : 'Đánh giá'
                                                             }`}{' '}
                                                             )
                                                         </a>
@@ -188,8 +188,18 @@ const ShopDetailsMain = ({ id }: any) => {
                                             </div>
                                             <h3>{myProduct?.productName}</h3>
                                             <div className="product-price">
-                                                <span>${myProduct?.price}.00</span>
-                                                <del>${myProduct?.oldPrice}.00</del>
+                                                <span>
+                                                    {new Intl.NumberFormat('vi-VN', {
+                                                        style: 'currency',
+                                                        currency: 'VND',
+                                                    }).format(myProduct?.price)}
+                                                </span>
+                                                <del>
+                                                    {new Intl.NumberFormat('vi-VN', {
+                                                        style: 'currency',
+                                                        currency: 'VND',
+                                                    }).format(myProduct?.oldPrice)}
+                                                </del>
                                             </div>
                                             <div className="modal-product-meta bd__product-details-menu-1">
                                                 <ul>
@@ -254,7 +264,9 @@ const ShopDetailsMain = ({ id }: any) => {
                                                             }
                                                         >
                                                             <i className="far fa-heart"></i>
-                                                            <span>Thêm Vào Danh Sách Yêu Thích</span>
+                                                            <span>
+                                                                Thêm Vào Danh Sách Yêu Thích
+                                                            </span>
                                                         </span>
                                                     </li>
                                                     <li>

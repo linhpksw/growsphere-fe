@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import LoginFormInCheckOutPage from './LoginFormInCheckOutPage';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
@@ -11,6 +11,7 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import NiceSelectTwo from '@/utils/NiceSelectTwo';
 import { countryes } from '@/data/nice-select-data';
+import Image from 'next/image';
 interface FormData {
     Country: string;
     Fname: string;
@@ -34,6 +35,15 @@ const CheckOutMain = () => {
     const date = now.format('MM/DD/YY hh:mm a');
     const cartProducts = useSelector((state: RootState) => state.cart.cartProducts);
 
+    // State variables
+    const [qrDataURL, setQrDataURL] = useState<string | null>(null);
+    const [paymentCode, setPaymentCode] = useState<string>('');
+    const [secondsLeft, setSecondsLeft] = useState<number>(300); // 5 minutes
+
+    // Keep a ref for the polling interval & countdown interval
+    const countdownRef = useRef<NodeJS.Timeout | null>(null);
+    const pollRef = useRef<NodeJS.Timeout | null>(null);
+
     const totalPrice = cartProducts.reduce(
         (total, product) => total + (product.price ?? 0) * (product.totalCard ?? 0),
         0
@@ -42,34 +52,219 @@ const CheckOutMain = () => {
         router.push('/shop');
     };
 
-    useEffect(() => {
-        if (user?.email) {
-            axios
-                .post(
-                    `${process.env.BASE_URL}payment/payment-intent?email=${user?.email}`,
-                    { totalPrice },
-                    header
-                )
-                .then((res) => {
-                    setclientSecret(res.data.clientSecret);
-                })
-                .catch((error) => {
-                    if (error.response.status === 403) {
-                        console.error('Không có quyền truy cập');
-                    } else {
-                        console.error('Không có quyền truy cập');
-                    }
-                });
-        }
-    }, [user?.email, totalPrice, header]);
-
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm<FormData>();
 
-    const onSubmit: SubmitHandler<FormData> = async (data) => {};
+    // 1) Generate a random 6-digit code
+    const generateSixDigitCode = (): string => {
+        return Math.floor(100000 + Math.random() * 900000).toString();
+    };
+
+    // 2) Countdown timer (display as MM:SS)
+    const formatTimer = (secs: number) => {
+        const m = Math.floor(secs / 60)
+            .toString()
+            .padStart(2, '0');
+        const s = (secs % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+    };
+
+    // 3) Poll /payments/status?code=<paymentCode> every 5s
+    const startPolling = (code: string) => {
+        if (pollRef.current) clearInterval(pollRef.current);
+
+        pollRef.current = setInterval(async () => {
+            try {
+                const resp = await axios.get(`${process.env.BASE_URL}payments/status?code=${code}`);
+                // resp.data: { status: 'pending' } or { status: 'paid', paidAt, cassoTxnId } or { status: 'expired' }
+                const { status, cassoTxnId, paidAt } = resp.data;
+                if (status === 'paid') {
+                    // Stop polling
+                    if (pollRef.current) clearInterval(pollRef.current);
+
+                    // 4) Create the final order
+                    await finalizeOrder(code, cassoTxnId);
+                }
+            } catch (err) {
+                console.error('Polling error:', err);
+            }
+        }, 5000);
+    };
+
+    // 4) When we see “paid,” send final /orders/create
+    const finalizeOrder = async (code: string, cassoTxnId: number) => {
+        try {
+            // Build body with cartProducts from Redux (which is still in memory)
+            const body = {
+                buyerEmail: user?.email!,
+                paymentCode: code,
+                cassoTxnId,
+                // We also pass any other fields you want, e.g. name/address/city/etc.
+                // But since we already collected them in the form, we could pass them here.
+                // For simplicity, let’s assume the form values are still in state or available.
+
+                // In this example, we’ll pass only cartProducts and rely on orderSuccess.controller
+                // to fill in other fields (you can expand as needed).
+                cartProducts: cartProducts.map((item) => ({
+                    _id: item._id,
+                    productName: item.productName,
+                    categoryName: item.categoryName,
+                    price: item.price,
+                    totalCard: item.totalCard,
+                    orderDate: item.orderDate!,
+                })),
+            };
+
+            // POST to /orders/create
+            const resp = await axios.post(`${process.env.BASE_URL}orders/create`, body);
+            const { orderId } = resp.data;
+
+            // Mark paymentSuccess in context & redirect
+            setPaymentSuccess(true);
+            router.push(`/thank-you?orderId=${orderId}`);
+        } catch (err) {
+            console.error('finalizeOrder error:', err);
+            toast.error('Có lỗi khi tạo đơn hàng cuối cùng.');
+        }
+    };
+
+    // 5) When 5-minute countdown hits zero, regenerate code & QR
+    const refreshQRCode = async () => {
+        const newCode = generateSixDigitCode();
+        setPaymentCode(newCode);
+        setSecondsLeft(300);
+
+        // 5a) Call /payments/preorder again with newCode & new expiry
+        const expiresAt = moment().add(5, 'minutes').toISOString();
+        try {
+            await axios.post(`${process.env.BASE_URL}payments/preorder`, {
+                paymentCode: newCode,
+                buyerEmail: user?.email,
+                amount: totalPrice,
+                expiresAt,
+            });
+        } catch (err) {
+            console.error('refresh preorder error:', err);
+            toast.error('Không thể làm mới preorder.');
+            return;
+        }
+
+        // 5b) Generate new QR from VietQR
+        await fetchVietQR(newCode);
+
+        // 5c) Restart countdown & polling
+        if (countdownRef.current) clearInterval(countdownRef.current);
+        if (pollRef.current) clearInterval(pollRef.current);
+        startCountdown();
+        startPolling(newCode);
+    };
+
+    // 6) Countdown helper
+    const startCountdown = () => {
+        if (countdownRef.current) clearInterval(countdownRef.current);
+        countdownRef.current = setInterval(() => {
+            setSecondsLeft((prev) => {
+                if (prev <= 1) {
+                    if (countdownRef.current) clearInterval(countdownRef.current);
+                    refreshQRCode();
+                    return 300;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+    };
+
+    // 7) Call VietQR with a given code
+    const fetchVietQR = async (code: string) => {
+        try {
+            setProcessing(true);
+
+            const VIETQR_URL = 'https://api.vietqr.io/v2/generate';
+            const CLIENT_ID = '36cb01ee-882d-469f-b1ea-237def4180d0';
+            const API_KEY = 'd989661c-a00f-4408-bfd6-e4d508db41b0';
+
+            const qrBody = {
+                accountNo: '105870477482',
+                accountName: 'CONG TY TNHH NAY MAM',
+                acqId: '970415',
+                amount: totalPrice.toString(), // “250000”
+                addInfo: code, // “483912”
+                template: 'UWBYaB6',
+            };
+
+            const resp = await axios.post(VIETQR_URL, qrBody, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-client-id': CLIENT_ID,
+                    'x-api-key': API_KEY,
+                },
+            });
+            if (resp.data?.data?.qrDataURL) {
+                setQrDataURL(resp.data.data.qrDataURL);
+            } else {
+                throw new Error('No qrDataURL in response');
+            }
+        } catch (err) {
+            console.error('fetchVietQR error:', err);
+            toast.error('Không thể tạo QR Code. Vui lòng thử lại.');
+        } finally {
+            setProcessing(false);
+        }
+    };
+
+    // 8) Handler for “Tạo mã QR để thanh toán”
+    const onSubmit: SubmitHandler<FormData> = async (data) => {
+        if (!user?.email) {
+            toast.error('Vui lòng đăng nhập trước khi thanh toán');
+            return;
+        }
+        if (cartProducts.length === 0) {
+            toast.error('Giỏ hàng trống');
+            return;
+        }
+
+        try {
+            setProcessing(true);
+            // 8a) Generate a 6-digit code
+            const code = generateSixDigitCode();
+            setPaymentCode(code);
+
+            // 8b) Build expiresAt = now + 5 minutes
+            const expiresAt = moment().add(5, 'minutes').toISOString();
+
+            // 8c) POST /payments/preorder
+            await axios.post(`${process.env.BASE_URL}payments/preorder`, {
+                paymentCode: code,
+                buyerEmail: user.email,
+                amount: totalPrice,
+                expiresAt,
+            });
+
+            // 8d) Generate QR
+            await fetchVietQR(code);
+
+            // 8e) Start countdown & polling
+            setSecondsLeft(300);
+            startCountdown();
+            startPolling(code);
+        } catch (err) {
+            console.error('onSubmit error:', err);
+            toast.error('Không thể tạo mã QR. Vui lòng thử lại.');
+        } finally {
+            setProcessing(false);
+        }
+    };
+
+    // Clean up on unmount
+    useEffect(() => {
+        return () => {
+            if (countdownRef.current) clearInterval(countdownRef.current);
+            if (pollRef.current) clearInterval(pollRef.current);
+        };
+    }, []);
 
     const selectHandler = () => {};
 
@@ -81,7 +276,7 @@ const CheckOutMain = () => {
                         {user?.email ? (
                             <h3>
                                 {' '}
-                                Rất vui được gặp bạn {user?.name}{' '},
+                                Rất vui được gặp bạn {user?.name} ,
                                 <span id="showlogin"> chào mừng đến với GrowSphere </span>
                             </h3>
                         ) : (
@@ -91,8 +286,7 @@ const CheckOutMain = () => {
                         )}
                         <div id="checkout-login" className={`coupon-content d-block`}>
                             <div className="coupon-info">
-                                <p className="coupon-text">                   
-                                </p>
+                                <p className="coupon-text"></p>
                                 {/* login form  */}
 
                                 {!user?.email && <LoginFormInCheckOutPage />}
@@ -107,21 +301,6 @@ const CheckOutMain = () => {
                                     <h3>Chi tiết hoá đơn</h3>
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <div className="country-select">
-                                                <label>
-                                                    Đất nước <span className="required">*</span>
-                                                </label>
-                                                <NiceSelectTwo
-                                                    options={countryes}
-                                                    defaultCurrent={0}
-                                                    onChange={selectHandler}
-                                                    name=""
-                                                    setapiEndPoint={setcountry}
-                                                    className="gender-select"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
                                             <div className="checkout-form-list">
                                                 <label>
                                                     Tên <span className="required">*</span>
@@ -131,7 +310,7 @@ const CheckOutMain = () => {
                                                     defaultValue={user?.email && user.name}
                                                     placeholder="Nhập tên của bạn"
                                                     {...register('Fname', {
-                                                        required: 'Name is required',
+                                                        required: 'Vui lòng nhập tên',
                                                     })}
                                                 />
                                                 {errors.Fname && (
@@ -151,7 +330,7 @@ const CheckOutMain = () => {
                                                     type="text"
                                                     placeholder="Địa chỉ"
                                                     {...register('Address', {
-                                                        required: 'Address is required',
+                                                        required: 'Vui lòng nhập địa chỉ',
                                                     })}
                                                 />
                                                 {errors.Address && (
@@ -161,51 +340,23 @@ const CheckOutMain = () => {
                                                 )}
                                             </div>
                                         </div>
-                                        <div className="col-md-12">
-                                            <div className="checkout-form-list">
-                                                <input
-                                                    type="text"
-                                                    placeholder="Căn hộ, phòng, đơn vị, v.v. (không bắt buộc)"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="checkout-form-list">
-                                                <label>
-                                                    Thị trấn / Thành phố{' '}
-                                                    <span className="required">*</span>
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    placeholder="Thị trấn / Thành phố"
-                                                    {...register('City', {
-                                                        required: 'Password is required',
-                                                    })}
-                                                />
-                                                {errors.City && (
-                                                    <span className="error-message">
-                                                        {errors.City.message}
-                                                    </span>
-                                                )}
-                                            </div>
-                                        </div>
 
                                         <div className="col-md-6">
                                             <div className="checkout-form-list">
                                                 <label>
-                                                    Mã bưu điện / Mã ZIP{' '}
-                                                    <span className="required">*</span>
+                                                    Điện thoại <span className="required">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
-                                                    placeholder="Mã bưu điện / Mã ZIP"
-                                                    {...register('Postcode', {
-                                                        required: 'Postcode is required',
+                                                    defaultValue={user?.email && user.phone}
+                                                    placeholder="Số điện thoại"
+                                                    {...register('Phone', {
+                                                        required: 'Vui lòng nhập số điện thoại',
                                                     })}
                                                 />
-                                                {errors.Postcode && (
+                                                {errors.Phone && (
                                                     <span className="error-message">
-                                                        {errors.Postcode.message}
+                                                        {errors.Phone.message}
                                                     </span>
                                                 )}
                                             </div>
@@ -221,32 +372,12 @@ const CheckOutMain = () => {
                                                     defaultValue={user?.email && user.email}
                                                     placeholder=""
                                                     {...register('EmailAddress', {
-                                                        required: 'Email is required',
+                                                        required: 'Vui lòng nhập email',
                                                     })}
                                                 />
                                                 {errors.EmailAddress && (
                                                     <span className="error-message">
                                                         {errors.EmailAddress.message}
-                                                    </span>
-                                                )}
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="checkout-form-list">
-                                                <label>
-                                                    Điện thoại <span className="required">*</span>
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    defaultValue={user?.email && user.phone}
-                                                    placeholder="Số điện thoại"
-                                                    {...register('Phone', {
-                                                        required: 'Phone is required',
-                                                    })}
-                                                />
-                                                {errors.Phone && (
-                                                    <span className="error-message">
-                                                        {errors.Phone.message}
                                                     </span>
                                                 )}
                                             </div>
@@ -309,80 +440,10 @@ const CheckOutMain = () => {
                                     </div>
 
                                     <div className="payment-method">
-                                        <div className="accordion" id="checkoutAccordion">
-                                            <div className="accordion-item">
-                                                <h2 className="accordion-header" id="checkoutOne">
-                                                    <button
-                                                        className="accordion-button"
-                                                        type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#bankOne"
-                                                        aria-expanded="true"
-                                                        aria-controls="bankOne"
-                                                    >
-                                                        Chuyển khoản ngân hàng trực tiếp
-                                                    </button>
-                                                </h2>
-                                                <div
-                                                    id="bankOne"
-                                                    className="accordion-collapse collapse show"
-                                                    aria-labelledby="checkoutOne"
-                                                    data-bs-parent="#checkoutAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        Vui lòng thanh toán trực tiếp vào tài khoản
-                                                        ngân hàng của chúng tôi. Hãy sử dụng Mã Đơn
-                                                        Hàng của bạn làm mã tham chiếu khi thanh
-                                                        toán. Đơn hàng của bạn sẽ được xử lý và gửi
-                                                        đi sau khi chúng tôi nhận được khoản thanh
-                                                        toán.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item">
-                                                <h2 className="accordion-header" id="paymentTwo">
-                                                    <button
-                                                        className="accordion-button collapsed"
-                                                        type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#payment"
-                                                        aria-expanded="false"
-                                                        aria-controls="payment"
-                                                    >
-                                                        Thanh toán bằng séc
-                                                    </button>
-                                                </h2>
-                                                <div
-                                                    id="payment"
-                                                    className="accordion-collapse collapse"
-                                                    aria-labelledby="paymentTwo"
-                                                    data-bs-parent="#checkoutAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        Vui lòng gửi séc của bạn đến: Tên cửa hàng,
-                                                        Đường cửa hàng, Thị trấn cửa hàng, Tỉnh /
-                                                        Huyện cửa hàng, Mã bưu điện cửa hàng.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item cart-input-box">
-                                                <div
-                                                    id="paypal"
-                                                    className="accordion-collapse collapse"
-                                                    aria-labelledby="paypalThree"
-                                                    data-bs-parent="#checkoutAccordion"
-                                                >
-                                                    <div className="accordion-body">
-                                                        Thanh toán qua PayPal; bạn cũng có thể thanh
-                                                        toán bằng thẻ tín dụng nếu không có tài
-                                                        khoản PayPal.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="order-button-payment mt-20">
-                                            {cartProducts.length ? (
-                                                <>
+                                        {/* If no QR yet, show “Tạo mã QR” button */}
+                                        {!qrDataURL && (
+                                            <div className="order-button-payment mt-20">
+                                                {cartProducts.length > 0 ? (
                                                     <button
                                                         type="submit"
                                                         className={
@@ -390,20 +451,13 @@ const CheckOutMain = () => {
                                                                 ? 'bd-fill__btn'
                                                                 : 'custome_disable'
                                                         }
-                                                        disabled={
-                                                            !user?.email ||
-                                                            !clientSecret ||
-                                                            processing ||
-                                                            !cartProducts
-                                                        }
+                                                        disabled={!user?.email || processing}
                                                     >
-                                                        {transactionId
-                                                            ? 'Payment Success'
-                                                            : 'Place Order'}
+                                                        {processing
+                                                            ? 'Đang tạo mã QR...'
+                                                            : 'Tạo mã QR để thanh toán'}
                                                     </button>
-                                                </>
-                                            ) : (
-                                                <>
+                                                ) : (
                                                     <button
                                                         onClick={handleGoToShopPage}
                                                         className={
@@ -412,15 +466,62 @@ const CheckOutMain = () => {
                                                                 : 'custome_disable'
                                                         }
                                                     >
-                                                        Thêm sản phẩm vào giỏ hàng để thanh toán
+                                                        Thêm sản phẩm vào giỏ hàng
                                                     </button>
-                                                </>
-                                            )}
+                                                )}
+                                            </div>
+                                        )}
 
-                                            {cardError && (
-                                                <p className="text-red-600">{cardError}</p>
-                                            )}
-                                        </div>
+                                        {/* If we have qrDataURL, display it + countdown + code */}
+                                        {qrDataURL && (
+                                            <div className="qr-section mt-20 text-center">
+                                                <p>
+                                                    Quét mã QR bên dưới để thanh toán <br />
+                                                    <strong>
+                                                        (Hỗ trợ NAPAS, VNPAY, Momo – bảo mật 2FA,
+                                                        128-bit SSL)
+                                                    </strong>
+                                                </p>
+
+                                                <div className="qr-image mb-3">
+                                                    <Image
+                                                        src={qrDataURL}
+                                                        alt="QR Code thanh toán"
+                                                        width={300}
+                                                        height={388}
+                                                    />
+                                                </div>
+
+                                                <div className="qr-info">
+                                                    <p>
+                                                        <strong>Nội dung chuyển khoản:</strong>{' '}
+                                                        <span
+                                                            style={{
+                                                                fontSize: '1.2em',
+                                                                color: '#d9534f',
+                                                            }}
+                                                        >
+                                                            {paymentCode}
+                                                        </span>
+                                                    </p>
+                                                    <p>
+                                                        <strong>Hạn chót thanh toán:</strong>{' '}
+                                                        <span
+                                                            style={{
+                                                                fontSize: '1.2em',
+                                                                color: '#0275d8',
+                                                            }}
+                                                        >
+                                                            {formatTimer(secondsLeft)}
+                                                        </span>
+                                                    </p>
+                                                    <p style={{ fontSize: '0.9em', color: '#777' }}>
+                                                        *Sau khi thời gian kết thúc, mã QR sẽ tự
+                                                        động làm mới.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
